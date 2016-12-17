@@ -161,6 +161,10 @@ nmap t :
 " Start search with with 's' in normal mode 
 nmap s /
 
+" Vertically center search results
+nnoremap n nzz
+nnoremap N Nzz
+
 " Shortcut for substitutes
 nmap <leader>s :s/
 nmap <leader>S :%s/
