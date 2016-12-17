@@ -87,15 +87,13 @@ highlight CursorLineNr ctermfg=255
 set cursorline
 highlight CursorLine ctermfg=none ctermbg=236
 
+
 " ============================================================================
 " KEYBINDINGS
 " ============================================================================
 
 " Remappings for escape-key
-inoremap <C-j> <Esc>
 inoremap jj <Esc>
-nnoremap <C-j> <Esc>
-vnoremap <C-j> <Esc>
 
 " Copy and Paste from clipboard
 nnoremap <leader>y "+y
@@ -129,8 +127,8 @@ map <C-A> <Esc>ggVG
 " Move lines
 nnoremap <C-k> :move .-2<Return>
 nnoremap <C-j> :move .+1<Return>
-"inoremap <C-j> <ESC>:move .+1<CR>==gi
-"inoremap <C-k> <ESC>:move .-2<CR>==gi
+inoremap <C-j> <ESC>:move .+1<CR>==gi
+inoremap <C-k> <ESC>:move .-2<CR>==gi
 vnoremap <C-j> :move '>+1<CR>gv=gv
 vnoremap <C-k> :move '<-2<CR>gv=gv
 
@@ -178,7 +176,7 @@ nnoremap N Nzz
 nmap <leader>s :s/
 nmap <leader>S :%s/
 
-" qq to record, Q to replay
+" qq to record macro, Q to replay it
 nnoremap Q @q
 
 " Allow to toggle between absolute and relative line-numbers
