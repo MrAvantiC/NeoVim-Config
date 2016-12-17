@@ -62,6 +62,14 @@ set hidden
 " Always have lines above/below the cursor for better overview
 set scrolloff=10
 
+" Remember cursor position between vim sessions
+autocmd BufReadPost *
+              \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+              \   exe "normal! g'\"" |
+              \ endif
+              " center buffer around cursor when opening files
+autocmd BufRead * normal zz
+
 
 " ============================================================================
 " COLOR SETTINGS
