@@ -51,6 +51,7 @@ set smartindent
 
 " Searching
 set ignorecase
+set nohlsearch
 
 " Align breaking lines with the line above
 set breakindent
