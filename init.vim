@@ -14,6 +14,8 @@ Plug 'airblade/vim-gitgutter'
 
 " Navigation
 Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf', {'do': '.install --bin'}
+Plug 'junegunn/fzf.vim'
 
 " Editing
 Plug 'tpope/vim-surround'
@@ -144,8 +146,8 @@ vnoremap > <gv
 imap <S-Tab> <C-d>
 
 " Move between buffers with arrows
-nnoremap <Left> :bprev<CR>
-nnoremap <Right> :bnext<CR>
+nnoremap <silent> <Left> :bprev<CR>
+nnoremap <silent> <Right> :bnext<CR>
 
 " Move between splits with ctrl+arrows
 nnoremap <C-down> <C-W>j
@@ -187,12 +189,20 @@ map <silent> <Esc> :nohlsearch<CR>
 nnoremap Q @q
 
 " NerdTree
-map <leader>n :NERDTreeToggle<Return>
-map <leader>c :NERDTreeFind<Return>
+map <leader>n :NERDTreeToggle<CR>
+map <leader>c :NERDTreeFind<CR>
 
 " NerdCommenter
 map <C-c> <plug>NERDCommenterToggle
 imap <C-c> <Esc><plug>NERDCommenterToggle_
+
+" FZF
+nmap <leader>t :FZF<CR>
+nmap <leader>b :Buffers<CR>
+nmap <leader>f :Ag 
+nmap <leader>F :Ag <C-r><C-w><CR>
+vmap <leader>f y:Ag <C-r><C-w><CR>
+nmap <leader>g :GFiles?<CR>
 
 " Allow to toggle between absolute and relative line-numbers
 function! NumberToggle()
