@@ -170,7 +170,7 @@ vnoremap <C-A-k> :move '<-2<CR>gv=gv
 
 " Map tab/shift+tab for indenting 
 nmap <Tab> a<C-t><Esc>
-nmap <S-Tab> a<C-d><Esc>
+nnoremap <S-Tab> a<C-d><Esc>
 vnoremap < >gv
 vnoremap > <gv
 inoremap <S-Tab> <C-d>

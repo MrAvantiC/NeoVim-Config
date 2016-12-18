@@ -2,6 +2,7 @@
 let g:deoplete#enable_at_startup = 1
 " Start autocompletion right away
 let g:deoplete#auto_complete_start_length=1
+let g:deoplete#auto_complete_delay=50
 
 
 " Set the sources deoplete pulls suggestions from
@@ -14,7 +15,7 @@ let g:deoplete#sources.javascript = ['buffer', 'ultisnips', 'ternjs']
 
 
 " Unset the preview-option to avoid opening the documentation in new split
-"set completeopt=menu,noinsert
+set completeopt-=preview
 
 
 " Set filetype-specific omnifunctions with this syntax if you want to support
@@ -23,12 +24,6 @@ let g:deoplete#sources.javascript = ['buffer', 'ultisnips', 'ternjs']
 "let g:deoplete#omni#functions.javascript = [
   "\ 'tern#Complete'
   "\]
-
-
-" Let <Tab> also do completion (-> not working with UltiSnips)
-inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : deoplete#mappings#manual_complete()
-" ...but map enter so it's not putting in a new line after selecting
-inoremap <expr> <Enter> pumvisible() ? "<Esc>a" : "<Enter>"
 
 
 " Close the preview window when completion is done
