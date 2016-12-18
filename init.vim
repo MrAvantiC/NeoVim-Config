@@ -28,6 +28,9 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs'
 Plug 'SirVer/ultisnips'
 
+" Formatting
+Plug 'Chiel92/vim-autoformat'
+
 " Utility
 Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'
