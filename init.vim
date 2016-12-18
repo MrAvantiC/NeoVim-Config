@@ -183,6 +183,10 @@ nmap <leader>S :%s/
 " qq to record macro, Q to replay it
 nnoremap Q @q
 
+" NerdCommenter
+map <C-c> <plug>NERDCommenterToggle
+imap <C-c> <Esc><plug>NERDCommenterToggle_
+
 " Allow to toggle between absolute and relative line-numbers
 function! NumberToggle()
   if(&relativenumber == 1)
