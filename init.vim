@@ -31,6 +31,11 @@ Plug 'SirVer/ultisnips'
 Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'
 
+" Language support
+Plug 'digitaltoad/vim-pug'
+Plug 'blueyed/smarty.vim'
+Plug 'wavded/vim-stylus'
+
 call plug#end()
 
 
@@ -102,6 +107,9 @@ highlight CursorLine ctermfg=none ctermbg=236
 " Suggestion popup menu
 highlight Pmenu ctermfg=255 ctermbg=237
 highlight PmenuSel ctermfg=235 ctermbg=250
+
+" Highlight Matching parentheses
+highlight MatchParen cterm=bold ctermbg=none ctermfg=015
 
 
 " ============================================================================
