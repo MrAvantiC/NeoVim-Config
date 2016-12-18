@@ -124,6 +124,9 @@ nnoremap <leader>j J
 " Select all with ctrl+a
 map <C-A> <Esc>ggVG
 
+" Delete line in insert mode
+inoremap <C-d> <Esc>ddi
+
 " Move lines
 nnoremap <C-k> :move .-2<Return>
 nnoremap <C-j> :move .+1<Return>
