@@ -19,6 +19,7 @@ Plug 'junegunn/fzf.vim'
 
 " Editing
 Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 
 " Autocompletions
