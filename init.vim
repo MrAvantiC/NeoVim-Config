@@ -14,12 +14,15 @@ Plug 'airblade/vim-gitgutter'
 
 " Navigation
 Plug 'scrooloose/nerdtree'
-Plug 'junegunn/fzf', {'do': '.install --bin'}
+Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 
 " Editing
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
+
+" Autocompletions
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Utility
 Plug 'itchyny/lightline.vim'
@@ -89,6 +92,9 @@ highlight CursorLineNr ctermfg=255
 set cursorline
 highlight CursorLine ctermfg=none ctermbg=236
 
+" Suggestion popup menu
+highlight Pmenu ctermfg=255 ctermbg=237
+highlight PmenuSel ctermfg=235 ctermbg=250
 
 " ============================================================================
 " KEYBINDINGS
