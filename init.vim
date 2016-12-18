@@ -239,3 +239,12 @@ function! NumberToggle()
   endif
 endfunc
 nnoremap <C-n> :call NumberToggle()<cr>
+
+" Remove trailing whitespaces for specified filetypes
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+autocmd FileType php,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
