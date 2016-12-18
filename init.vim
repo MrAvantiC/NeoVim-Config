@@ -126,7 +126,7 @@ nnoremap <leader>j J
 map <C-A> <Esc>ggVG
 
 " Delete line in insert mode
-inoremap <C-d> <Esc>ddi
+inoremap <C-d> <Esc>S
 
 " Move lines
 nnoremap <C-k> :move .-2<Return>
