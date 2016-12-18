@@ -5,7 +5,7 @@ let g:deoplete#auto_complete_start_length=1
 
 
 " Set the sources deoplete pulls suggestions from
-" init
+" init variable
 let g:deoplete#sources = {}
 " all files
 let g:deoplete#sources._ = ['buffer', 'ultisnips']

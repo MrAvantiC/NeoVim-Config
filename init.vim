@@ -31,6 +31,10 @@ Plug 'SirVer/ultisnips'
 " Formatting
 Plug 'Chiel92/vim-autoformat'
 
+" Linting
+Plug 'neomake/neomake'
+Plug 'jaawerth/neomake-local-eslint-first'
+
 " Utility
 Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'
@@ -229,6 +233,9 @@ nmap <leader>f :Ag
 nmap <leader>F :Ag <C-r><C-w><CR>
 vmap <leader>f y:Ag <C-r><C-w><CR>
 nmap <leader>g :GFiles?<CR>
+
+" Neomake -> go to next error/warning
+nmap <leader>l :ll<CR>
 
 " Allow to toggle between absolute and relative line-numbers
 function! NumberToggle()
