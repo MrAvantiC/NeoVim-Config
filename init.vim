@@ -116,9 +116,9 @@ map <C-A> <Esc>ggVG
 nmap j gj
 nmap k gk
 
-" Scroll by pages
-nmap J <C-f>
-nmap K <C-b>
+" Faster Scrolling
+nmap J 5j
+nmap K 5k
 nnoremap <leader>j J
 
 " Select all with ctrl+a
@@ -156,10 +156,10 @@ nnoremap <C-right> <C-W>l
 map <C-w> :bd<Return>
 
 " Remap move to beginning/end of line
-nnoremap ! 0
-nnoremap ? $
-vnoremap ! 0
-vnoremap ? $<Left>
+nnoremap H _
+nnoremap L g_
+vnoremap H _
+vnoremap L g_
 
 " Remap move to beginning/end of buffer
 nnoremap <CR> G
