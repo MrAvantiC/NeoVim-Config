@@ -1,5 +1,6 @@
 " keywords
 highlight pugScriptStatement ctermfg=045
+highlight link javaScriptReserved pugScriptStatement
 " classes, tags
 highlight pugClass ctermfg=154
 highlight link pugTag pugClass

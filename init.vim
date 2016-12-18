@@ -7,6 +7,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Colors
 Plug 'junegunn/seoul256.vim'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
 
 " Git
 Plug 'tpope/vim-fugitive'
