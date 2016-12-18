@@ -128,32 +128,32 @@ nnoremap <leader>j J
 map <C-A> <Esc>ggVG
 
 " Delete line in insert mode
-inoremap <C-d> <Esc>S
+inoremap <C-d> <Esc>ddi
 
 " Move lines
-nnoremap <C-k> :move .-2<Return>
-nnoremap <C-j> :move .+1<Return>
-inoremap <C-j> <ESC>:move .+1<CR>==gi
-inoremap <C-k> <ESC>:move .-2<CR>==gi
-vnoremap <C-j> :move '>+1<CR>gv=gv
-vnoremap <C-k> :move '<-2<CR>gv=gv
+nnoremap <C-A-k> :move .-2<Return>
+nnoremap <C-A-j> :move .+1<Return>
+inoremap <C-A-j> <ESC>:move .+1<CR>==gi
+inoremap <C-A-k> <ESC>:move .-2<CR>==gi
+vnoremap <C-A-j> :move '>+1<CR>gv=gv
+vnoremap <C-A-k> :move '<-2<CR>gv=gv
 
 " Map tab/shift+tab for indenting 
 nmap <Tab> a<C-t><Esc>
 nmap <S-Tab> a<C-d><Esc>
 vnoremap < >gv
 vnoremap > <gv
-imap <S-Tab> <C-d>
+inoremap <S-Tab> <C-d>
 
 " Move between buffers with arrows
 nnoremap <silent> <Left> :bprev<CR>
 nnoremap <silent> <Right> :bnext<CR>
 
 " Move between splits with ctrl+arrows
-nnoremap <C-down> <C-W>j
-nnoremap <C-up> <C-W>k
-nnoremap <C-left> <C-W>h
-nnoremap <C-right> <C-W>l
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
 
 " Close current buffer with ctrl+w
 map <C-w> :bd<Return>
