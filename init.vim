@@ -51,7 +51,7 @@ set smartindent
 
 " Searching
 set ignorecase
-set nohlsearch
+"set nohlsearch
 
 " Align breaking lines with the line above
 set breakindent
@@ -179,6 +179,9 @@ nnoremap N Nzz
 " Shortcut for substitutes
 nmap <leader>s :s/
 nmap <leader>S :%s/
+
+" Clear highlighted search results
+map <Esc> :nohlsearch<CR>
 
 " qq to record macro, Q to replay it
 nnoremap Q @q
