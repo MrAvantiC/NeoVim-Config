@@ -100,6 +100,7 @@ nnoremap <leader>y "+y
 vnoremap <leader>y "+y
 nnoremap <leader>p "+p
 vnoremap <leader>p "+p
+inoremap <C-v> <Esc>"+pa
 
 " Save buffer
 inoremap <C-s> <Esc>:update<cr>
