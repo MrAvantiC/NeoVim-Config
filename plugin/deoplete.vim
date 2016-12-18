@@ -25,10 +25,10 @@ let g:deoplete#sources.javascript = ['buffer', 'ultisnips', 'ternjs']
   "\]
 
 
-"" Let <Tab> also do completion
-"inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : deoplete#mappings#manual_complete()
-"" ...but map enter so it's not putting in a new line after selecting
-"inoremap <expr> <Enter> pumvisible() ? "<Esc>a" : "<Enter>"
+" Let <Tab> also do completion (-> not working with UltiSnips)
+inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : deoplete#mappings#manual_complete()
+" ...but map enter so it's not putting in a new line after selecting
+inoremap <expr> <Enter> pumvisible() ? "<Esc>a" : "<Enter>"
 
 
 " Close the preview window when completion is done

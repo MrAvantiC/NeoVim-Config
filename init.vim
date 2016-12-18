@@ -24,6 +24,7 @@ Plug 'scrooloose/nerdcommenter'
 " Autocompletions
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs'
+Plug 'SirVer/ultisnips'
 
 " Utility
 Plug 'itchyny/lightline.vim'
