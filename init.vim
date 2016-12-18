@@ -86,7 +86,7 @@ color seoul256
 
 " LineNumbers
 highlight LineNr ctermfg=243
-highlight CursorLineNr ctermfg=255
+highlight CursorLineNr ctermfg=255 ctermbg=236
 
 " Highlight the current line
 set cursorline
@@ -95,6 +95,7 @@ highlight CursorLine ctermfg=none ctermbg=236
 " Suggestion popup menu
 highlight Pmenu ctermfg=255 ctermbg=237
 highlight PmenuSel ctermfg=235 ctermbg=250
+
 
 " ============================================================================
 " KEYBINDINGS
