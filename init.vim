@@ -23,6 +23,7 @@ Plug 'scrooloose/nerdcommenter'
 
 " Autocompletions
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'carlitux/deoplete-ternjs'
 
 " Utility
 Plug 'itchyny/lightline.vim'
@@ -66,6 +67,10 @@ set hidden
 
 " Always have lines above/below the cursor for better overview
 set scrolloff=10
+
+" Horizontal split at bottom and vertical split to the right
+set splitbelow
+set splitright
 
 " Remember cursor position between vim sessions
 autocmd BufReadPost *
