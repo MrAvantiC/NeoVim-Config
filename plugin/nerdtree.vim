@@ -1,6 +1,3 @@
-" Keybinds
-map <leader>n :NERDTreeToggle<Return>
-map <leader>c :NERDTreeFind<Return>
 " Show hidden Files
 let NERDTreeShowHidden=1
 " Size of Nerdtree-Window

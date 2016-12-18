@@ -181,10 +181,14 @@ nmap <leader>s :s/
 nmap <leader>S :%s/
 
 " Clear highlighted search results
-map <Esc> :nohlsearch<CR>
+map <silent> <Esc> :nohlsearch<CR>
 
 " qq to record macro, Q to replay it
 nnoremap Q @q
+
+" NerdTree
+map <leader>n :NERDTreeToggle<Return>
+map <leader>c :NERDTreeFind<Return>
 
 " NerdCommenter
 map <C-c> <plug>NERDCommenterToggle
