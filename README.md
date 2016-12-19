@@ -13,20 +13,18 @@
 2. After installing, open up NVIM, do `:CheckHealth` and resolve eventual missing dependencies
 3. Clone this repo to `~/.config/nvim`
   * NVIM should automatically recognize the configurations thanks to the `XDG_Base_Directory` conventions
-4. Install `vim-plug`, our plugin manager
-  * `mkdir ~/.config/nvim/autoload`
-  * clone https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim into there
-5. Open init.vim with NVIM and do `:PlugInstall`
+4. Open init.vim with NVIM and do `:PlugInstall` to install plugins via vim-plug
   * Make sure all the Plugins install successfully, resolve eventual problems
   * After installing, do `:PlugUpdate` do update all plugins
-6. To make use of text-search, we need to install AG (aka SilverSearcher)
+5. To make use of text-search, we need to install AG (aka SilverSearcher)
   * apt-get on Ubuntu or brew on OSX: https://github.com/ggreer/the_silver_searcher
-7. Enable JavaSript-Autosuggestions by installing Tern
+6. Enable JavaSript-Autosuggestions by installing Tern
   * `npm install -g tern`
 7. For automatic formatting of files we need JS-Beautify
   * `npm install -g js-beautify`
 8. Make sure your terminal supports 256 colors (e.g. on mac: xterm-256color in iterm2)
 9. Install a custom font of your choice to make text look good (e.g. Sauce Code Powerline light)
+  * Note: To get the Devicons inside NerdTree working you need to install a patched font: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ## Installing new plugins
 For example install vim-fugitive just add the plugin-source (see [examples](https://github.com/junegunn/vim-plug#example)) to the `init.vim`-file and execute `:PlugInstall`
