@@ -53,6 +53,9 @@ call plug#end()
 " BASIC SETTINGS
 " ============================================================================
 
+" Make sure VIM is displayed in english
+let $LANG = 'en'
+
 let mapleader = " "
 
 " Display line numbers (relative in Normal and absolute in Insert)
