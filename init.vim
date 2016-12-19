@@ -239,6 +239,20 @@ nmap <leader>g :GFiles?<CR>
 " Neomake -> go to next error/warning
 nmap <leader>l :ll<CR>
 
+" Folds
+nnoremap <leader><space> za
+" vim-files
+autocmd FileType vim setlocal foldmethod=manual
+autocmd FileType vim setlocal foldlevel=0
+" Stylus
+autocmd FileType stylus setlocal foldmethod=indent
+autocmd FileType stylus setlocal foldlevel=99
+
+
+" ============================================================================
+" FUNCTIONS
+" ============================================================================
+
 " Allow to toggle between absolute and relative line-numbers
 function! NumberToggle()
   if(&relativenumber == 1)
@@ -257,3 +271,11 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 autocmd FileType php,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
+" Folds
+"set foldtext=MyFoldText()
+"function MyFoldText()
+  "let line = getline(v:foldstart)
+  "let sub = substitute(line, '/\*\|\*/\|{{{\d\=', '', 'g')
+  "return v:folddashes . sub
+"endfunction
