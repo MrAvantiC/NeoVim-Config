@@ -21,7 +21,7 @@ Plug 'junegunn/fzf.vim'
 
 " Editing
 Plug 'tpope/vim-surround'
-Plug 'jiangmiao/auto-pairs'
+Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'
 Plug 'scrooloose/nerdcommenter'
 
@@ -42,9 +42,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'
 
 " Language support
-Plug 'digitaltoad/vim-pug'
-Plug 'blueyed/smarty.vim'
-Plug 'wavded/vim-stylus'
+Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
+Plug 'blueyed/smarty.vim', { 'for': 'smarty' }
+Plug 'wavded/vim-stylus', { 'for': 'stylus' }
 
 call plug#end()
 
