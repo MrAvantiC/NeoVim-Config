@@ -45,6 +45,7 @@ Plug 'taohex/lightline-buffer'
 Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
 Plug 'blueyed/smarty.vim', { 'for': 'smarty' }
 Plug 'wavded/vim-stylus', { 'for': 'stylus' }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
 call plug#end()
 
@@ -253,6 +254,9 @@ autocmd FileType vim setlocal foldlevel=0
 " Stylus
 autocmd FileType stylus setlocal foldmethod=indent
 autocmd FileType stylus setlocal foldlevel=99
+" javascript
+autocmd FileType javascript setlocal foldmethod=syntax
+autocmd FileType javascript setlocal foldlevel=99
 
 
 " ============================================================================
