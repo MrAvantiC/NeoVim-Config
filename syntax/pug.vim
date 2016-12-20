@@ -14,3 +14,6 @@ highlight pugPipeChar ctermfg=015
 highlight pugId ctermfg=154
 highlight pugIdChar ctermfg=154
 highlight pugClassChar ctermfg=154
+" web components
+highlight link pugJavascriptChar pugTag
+highlight link pugJavascript pugTag
