@@ -242,6 +242,9 @@ nmap <leader>g :GFiles?<CR>
 " Neomake -> go to next error/warning
 nmap <leader>l :ll<CR>
 
+" Show highligh-group for item under cursor
+nmap <leader>h :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
+
 " Folds
 nnoremap <leader><space> za
 " vim-files
