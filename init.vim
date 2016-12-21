@@ -190,6 +190,10 @@ nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
+" If Ctrl+h doesn't work for you, use these commands in your terminal:
+" infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
+" tic $TERM.ti
+" see also: https://github.com/neovim/neovim/wiki/FAQ#my-ctrl-h-mapping-doesnt-work
 
 " Close current buffer with ctrl+w
 map <C-w> :bd<Return>
