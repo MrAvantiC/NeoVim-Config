@@ -6,6 +6,7 @@ highlight link jsFrom jsImport
 highlight link jsExport jsImport
 highlight link jsExportDefault jsImport
 highlight link jsConditional jsImport
+highlight link jsRepeat jsImport
 highlight link jsTernaryIfOperator jsImport
 " Keys in key/value-objects
 highlight jsObjectStringKey ctermfg=185
@@ -14,8 +15,15 @@ highlight jsStorageClass ctermfg=081
 " javascript native objects/prototypes
 highlight link jsPrototype jsStorageClass
 highlight link jsGlobalObjects jsStorageClass
+" return statement
+highlight link jsReturn jsStorageClass
+" null value
+highlight link jsNull jsBooleanTrue
 " function definition
 highlight jsObjectFuncName ctermfg=214
+highlight link jsFunction jsStorageClass
+" function key
+highlight jsFunctionKey ctermfg=214
 " function call
 highlight jsFuncCall ctermfg=040
 " this
