@@ -1,17 +1,25 @@
-highlight link htmlTag htmlArg
-highlight htmlTag ctermfg=015
-highlight link htmlEndTag htmlTag
-highlight htmlTagN ctermfg=196
-highlight htmlTagName ctermfg=196
-highlight htmlString ctermfg=178
-highlight htmlLink ctermfg=015
-highlight smartyComment ctermfg=243
-highlight link smartyTagName cssBoxProp 
-highlight link smartyStringDouble htmlString
-highlight link phpBoolean javaScriptNull
-highlight Constant ctermfg=178 
-highlight link Delimiter smartyDollarSign 
-highlight link smartyVariable smartyDollarSign
-highlight link smartyModifier smartyDollarSign
-highlight link smartyConditional smartyRepeat
-highlight link smartyZone smartyDollarSign
+" general html
+hi htmlTagName ctermfg=179
+hi link htmlTagN htmlTagName
+hi link htmlTag htmlTagName
+hi link htmlEndTag htmlTagName
+hi htmlArg ctermfg=166
+hi htmlString ctermfg=114
+hi htmlLink ctermfg=015
+" Conditionals, functions, etc
+hi smartyTagName ctermfg=196
+hi link smartyConditional smartyTagName
+hi link smartyRepeat smartyTagName
+" variables
+hi smartyDollarSign ctermfg=109
+hi link Delimiter smartyDollarSign 
+hi link smartyVariable smartyDollarSign
+hi link smartyStringDouble smartyDollarSign
+hi link Constant smartyDollarSign
+" function calls
+hi smartyModifier ctermfg=040
+" Operators
+hi link smartyZone smartyNumber
+hi link smartyOperator smartyZone
+"comments
+hi smartyComment ctermfg=243
