@@ -1,19 +1,19 @@
 " keywords
-highlight pugScriptStatement ctermfg=045
-highlight link javaScriptReserved pugScriptStatement
+hi pugScriptStatement ctermfg=045
+hi link javaScriptReserved pugScriptStatement
 " classes, tags
-highlight pugClass ctermfg=154
-highlight link pugTag pugClass
-highlight link htmlTagName pugClass
+hi pugClass ctermfg=154
+hi link pugTag pugClass
+hi link htmlTagName pugClass
 " parameters
-highlight javaScriptStringD ctermfg=193
-highlight pugAttributes ctermfg=193
+hi javaScriptStringD ctermfg=193
+hi pugAttributes ctermfg=193
 " pipe
-highlight pugPipeChar ctermfg=015
+hi pugPipeChar ctermfg=015
 " # and classes/ids
-highlight pugId ctermfg=154
-highlight pugIdChar ctermfg=154
-highlight pugClassChar ctermfg=154
+hi pugId ctermfg=154
+hi pugIdChar ctermfg=154
+hi pugClassChar ctermfg=154
 " web components
-highlight link pugJavascriptChar pugTag
-highlight link pugJavascript pugTag
+hi link pugJavascriptChar pugTag
+hi link pugJavascript pugTag
