@@ -1,7 +1,8 @@
 " Strings
 hi jsString ctermfg=114
 " Keywords
-hi jsImport ctermfg=196
+hi jsThis ctermfg=140
+hi link jsImport jsThis
 hi link jsFrom jsImport
 hi link jsExport jsImport
 hi link jsExportDefault jsImport
@@ -26,8 +27,6 @@ hi link jsFunction jsStorageClass
 hi jsFunctionKey ctermfg=214
 " function call
 hi jsFuncCall ctermfg=040
-" this
-hi jsThis ctermfg=140
 " Arrow function
 hi jsArrowFunction ctermfg=015
 " normal numbers

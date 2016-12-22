@@ -7,7 +7,7 @@ hi htmlArg ctermfg=166
 hi htmlString ctermfg=114
 hi htmlLink ctermfg=015
 " Conditionals, functions, etc
-hi smartyTagName ctermfg=196
+hi smartyTagName ctermfg=140
 hi link smartyConditional smartyTagName
 hi link smartyRepeat smartyTagName
 " variables
@@ -21,5 +21,9 @@ hi smartyModifier ctermfg=040
 " Operators
 hi link smartyZone smartyNumber
 hi link smartyOperator smartyZone
+" % sign
+hi htmlError ctermbg=none
 "comments
 hi smartyComment ctermfg=243
+
+map <leader>u :source ~/.config/nvim/syntax/smarty.vim<CR>
