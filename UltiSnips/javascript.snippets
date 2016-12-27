@@ -1,3 +1,4 @@
+# JQuery
 snippet $ "jQuery" i
 $('${1:${VISUAL}}')$0
 endsnippet
@@ -12,6 +13,48 @@ $(() => {
 });
 endsnippet
 
+# console
 snippet cl "console.log"
 console.log(${1:${VISUAL}});$0
+endsnippet
+
+# flow control
+snippet if "if-conditional" 
+if (${1}) {
+	${2:${VISUAL}}
+}${0}
+endsnippet
+
+snippet ife "if-else-conditional" 
+if (${1}) {
+	${2:${VISUAL}}
+} else {
+	${3}
+}${0}
+endsnippet
+
+snippet forEach "iterate elements in array" i
+forEach((${1:el}${2:, i}) => {
+	${3}
+});${0}
+endsnippet
+
+# functions
+snippet func "function definition (ES6)" 
+const ${1:functionName} = (${2:...params}) => {
+	${3:${VISUAL}}
+};${0}
+endsnippet
+
+snippet funcES5 "function definition (ES5)" 
+var ${1:functionName} = function(${2:...params}) {
+	${3:${VISUAL}}
+};${0}
+endsnippet
+
+# event-listeners
+snippet click "click-event" i
+click((e) => {
+	${1}
+});${0}
 endsnippet
