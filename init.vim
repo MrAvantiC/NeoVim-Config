@@ -24,6 +24,7 @@ Plug 'tpope/vim-surround'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'
 Plug 'scrooloose/nerdcommenter'
+Plug 'brooth/far.vim'
 
 " Autocompletions
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
