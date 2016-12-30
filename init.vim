@@ -214,6 +214,7 @@ nmap t :
 
 " Start search with with 's' in normal mode 
 nmap s /
+vnoremap s y/<C-r><C-w><CR>N
 
 " Vertically center search results
 nnoremap n nzz
