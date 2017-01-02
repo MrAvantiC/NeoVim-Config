@@ -12,6 +12,7 @@ let g:deoplete#sources = {}
 let g:deoplete#sources._ = ['buffer', 'ultisnips']
 " filetype-specifics
 let g:deoplete#sources.javascript = ['buffer', 'ultisnips', 'ternjs']
+let g:deoplete#sources.stylus = ['buffer']
 
 
 " Unset the preview-option to avoid opening the documentation in new split
