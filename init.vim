@@ -57,7 +57,7 @@ call plug#end()
 " ============================================================================
 
 " Make sure VIM is displayed in english
-let $LANG = 'en'
+let $LANG = 'en_US'
 
 let mapleader = " "
 
