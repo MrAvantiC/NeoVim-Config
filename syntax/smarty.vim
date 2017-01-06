@@ -6,6 +6,7 @@ hi link htmlEndTag htmlTagName
 hi htmlArg ctermfg=166
 hi htmlString ctermfg=114
 hi htmlLink ctermfg=015
+hi htmlH2 ctermfg=015
 " Conditionals, functions, etc
 hi smartyTagName ctermfg=140
 hi link smartyConditional smartyTagName

@@ -1,16 +1,17 @@
 " Comment Color
 hi Comment ctermfg=243
-" Strings, StylusClasses 
+" Strings, StylusClasses, StylusID
 hi String ctermfg=154
 hi link stylusClass String
 hi link stylusClassChar String
+hi link stylusId String
+hi link stylusIdChar String
 hi link cssSelector String
 hi link cssPseudo String
 hi link stylusAmpersand String
 " CSS Property-names
 hi StorageClass ctermfg=045
 hi link stylusProperty StorageClass
-hi link stylusId StorageClass
 hi link cssSpecialProp cssAdvancedProp
 " CSS Property-value
 hi Identifier ctermfg=015
