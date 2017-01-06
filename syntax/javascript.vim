@@ -38,3 +38,10 @@ hi link jsTemplateBraces jsObjectStringKey
 hi link jsTemplateString jsObjectStringKey
 " comments
 hi jsComment ctermfg=243
+" JS-Doc
+hi jsDocTags ctermfg=243 cterm=bold
+hi jsDocParam ctermfg=247
+hi link jsDocType jsComment
+hi link jsDocTypeNoParam jsComment
+
+map <leader>u :source ~/.config/nvim/syntax/javascript.vim<CR>

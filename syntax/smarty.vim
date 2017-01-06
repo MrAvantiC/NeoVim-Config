@@ -26,5 +26,3 @@ hi link smartyOperator smartyZone
 hi htmlError ctermbg=none
 "comments
 hi smartyComment ctermfg=243
-
-map <leader>u :source ~/.config/nvim/syntax/smarty.vim<CR>
