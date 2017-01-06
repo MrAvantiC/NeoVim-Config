@@ -48,6 +48,7 @@ Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
 Plug 'blueyed/smarty.vim', { 'for': 'smarty' }
 Plug 'wavded/vim-stylus', { 'for': 'stylus' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 
 call plug#end()
@@ -130,7 +131,7 @@ highlight MatchParen cterm=bold ctermbg=none ctermfg=015
 
 
 " ============================================================================
-" KEYBINDINGS
+" KEYBINDINGS - GENERAL
 " ============================================================================
 
 " Remappings for escape-key
@@ -232,6 +233,13 @@ map <silent> <Esc> :nohlsearch<CR>
 " qq to record macro, Q to replay it
 nnoremap Q @q
 
+" Show highligh-group for item under cursor
+nmap <leader>h :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
+
+" ============================================================================
+" KEYBINDINGS - PLUGINS
+" ============================================================================
+
 " NerdTree
 map <leader>n :NERDTreeToggle<CR>
 map <leader>c :NERDTreeFind<CR>
@@ -263,10 +271,13 @@ map <leader>K <Plug>(easymotion-eol-k)
 " Neomake -> go to next error/warning
 nmap <leader>l :ll<CR>
 
-" Show highligh-group for item under cursor
-nmap <leader>h :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
+" JS-Doc
+nmap <leader>d <Plug>(jsdoc)
 
-" Folds
+" ============================================================================
+" FOLDS
+" ============================================================================
+
 nnoremap <leader><space> za
 " vim-files
 autocmd FileType vim setlocal foldmethod=manual
@@ -301,11 +312,3 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 autocmd FileType php,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
-
-" Folds
-"set foldtext=MyFoldText()
-"function MyFoldText()
-  "let line = getline(v:foldstart)
-  "let sub = substitute(line, '/\*\|\*/\|{{{\d\=', '', 'g')
-  "return v:folddashes . sub
-"endfunction
