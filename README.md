@@ -81,12 +81,14 @@ A sample file could look like this:
 ## Formatting
 JS-Files will automatically get formatted on save. To enable this, JS-Beautify has to be installed globally.
 
-The default configuration of JS-Beautify does not support inline-formatting of ES6-Destructuring. This can be fixed with a .jsbeautifyrc-file that has to be put either in the `HOME`-directory or your project-directory:
+The default configuration of JS-Beautify does not support inline-formatting of ES6-Destructuring. This can be fixed with a `.jsbeautifyrc`-file that has to be put either in the `HOME`-directory or your project-directory:
+```
 {
   "allowed_file_extensions": ["js", "json"],
   "indent_size": 2,
   "brace_style": "collapse-preserve-inline"
 }
+```
 
 ## Linting
 If a local installation of `eslint` is present in the working directory, it will automatically be recognized and used to lint all JavaScript-files on save.
