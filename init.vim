@@ -18,6 +18,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'easymotion/vim-easymotion'
 
 " Editing
 Plug 'tpope/vim-surround'
@@ -148,7 +149,6 @@ nnoremap <C-s> :update<cr>
 
 " Quit VIM
 nnoremap <c-q>     :q<cr>
-nnoremap <leader>q :q<cr>
 
 " Select all with ctrl+a
 map <C-A> <Esc>ggVG
@@ -160,7 +160,8 @@ nmap k gk
 " Faster Scrolling
 nmap J 5j
 nmap K 5k
-nnoremap <leader>j J
+" Join lines
+nnoremap <leader><leader>j J
 
 " Select all with ctrl+a
 map <C-A> <Esc>ggVG
@@ -246,6 +247,17 @@ nmap <leader>f :Ag
 nmap <leader>F :Ag <C-r><C-w><CR>
 vmap <leader>f y:Ag <C-r><C-w><CR>
 nmap <leader>g :GFiles?<CR>
+
+" EasyMotion
+map f <Plug>(easymotion-bd-f)
+map <leader>w <Plug>(easymotion-bd-w)
+map <leader>W <Plug>(easymotion-bd-W)
+map <leader>e <Plug>(easymotion-bd-e)
+map <leader>E <Plug>(easymotion-bd-E)
+map <leader>j <Plug>(easymotion-j)
+map <leader>k <Plug>(easymotion-k)
+map <leader>J <Plug>(easymotion-eol-j)
+map <leader>K <Plug>(easymotion-eol-k)
 
 " Neomake -> go to next error/warning
 nmap <leader>l :ll<CR>
