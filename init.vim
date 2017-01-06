@@ -250,6 +250,7 @@ nmap <leader>g :GFiles?<CR>
 
 " EasyMotion
 map f <Plug>(easymotion-bd-f)
+map F <Plug>(easymotion-bd-f2)
 map <leader>w <Plug>(easymotion-bd-w)
 map <leader>W <Plug>(easymotion-bd-W)
 map <leader>e <Plug>(easymotion-bd-e)
