@@ -11,11 +11,10 @@ hi pugScriptConditional ctermfg=140
 hi javaScriptStringD ctermfg=193
 hi pugAttributes ctermfg=193
 hi htmlArg ctermfg=193
+hi javaScriptReserved ctermfg=193
+hi pugHtmlArg ctermfg=193
 " pipe
 hi pugPipeChar ctermfg=015
-" html attributes
-hi pugHtmlArg ctermfg=166
-hi link javaScriptReserved pugHtmlArg
 " # and classes/ids
 hi pugId ctermfg=154
 hi pugIdChar ctermfg=154
