@@ -89,6 +89,17 @@ snippet li "list item"
 <li class="${1}">${2:${VISUAL}}</li>
 endsnippet
 
+snippet select "select"
+<select class="${1}" name="${2}">
+	$0
+</select>
+endsnippet
+
+snippet option "option"
+<option value="${1}">${2}</option>
+$0
+endsnippet
+
 snippet br "line break"
 <br>
 endsnippet

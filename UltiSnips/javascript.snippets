@@ -58,3 +58,9 @@ click((e) => {
 	${1}
 });${0}
 endsnippet
+
+snippet delegate "event-delegation"
+$(${1:delegate-to}).on('${2:event}', '${3:delegate-from}', (e) => {
+	${0}
+});
+endsnippet

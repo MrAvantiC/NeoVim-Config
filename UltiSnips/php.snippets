@@ -1,0 +1,22 @@
+# flow control
+snippet if "if-conditional" 
+if (${1}) {
+	${2:${VISUAL}}
+}${0}
+endsnippet
+
+snippet ife "if-else-conditional" 
+if (${1}) {
+	${2:${VISUAL}}
+} else {
+	${3}
+}${0}
+endsnippet
+
+#functions
+snippet func "function definition" 
+public function ${1:functionName}(${2:...params})
+{
+	${3:${VISUAL}}	
+}${0}
+endsnippet
