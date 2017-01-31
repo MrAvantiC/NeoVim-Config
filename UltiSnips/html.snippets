@@ -21,16 +21,30 @@ snippet script "javascript"
 <script type="${1:text/javascript}" src="${2:javascript.js}"></script>
 endsnippet
 
+snippet style "style-block"
+<style type="text/css">
+	${1:${VISUAL}}
+</style>
+endsnippet
+
 snippet div 
 <div class="${1}">
 	${2:${VISUAL}}
 </div>
 endsnippet
 
+snippet divnc "div (no class)"
+<div>
+	${1:${VISUAL}}
+</div>
+endsnippet
+
 snippet span 
-<span class="${1}">
-	${2:${VISUAL}}
-</span>
+<span class="${1}">${2:${VISUAL}}</span>
+endsnippet
+
+snippet spannc "span (no class)"
+<span>${1:${VISUAL}}</span>
 endsnippet
 
 snippet figure 
@@ -44,21 +58,15 @@ snippet img
 endsnippet
 
 snippet h1 
-<h1 class="${1}">
-	${2:${VISUAL}}
-</h1>
+<h1 class="${1}">${2:${VISUAL}}</h1>
 endsnippet
 
 snippet h2 
-<h2 class="${1}">
-	${2:${VISUAL}}
-</h2>
+<h2 class="${1}">${2:${VISUAL}}</h2>
 endsnippet
 
 snippet h3 
-<h3 class="${1}">
-	${2:${VISUAL}}
-</h3>
+<h3 class="${1}">${2:${VISUAL}}</h3>
 endsnippet
 
 snippet a 
@@ -152,4 +160,12 @@ snippet aside "sidebar / related content"
 <aside class="${1}">
 	${2:${VISUAL}}
 </aside>
+endsnippet
+
+snippet label "label"
+<label for="${1}">${2:${VISUAL}}</label>
+endsnippet
+
+snippet input "input"
+<input type="${1}" id="${2}">
 endsnippet
