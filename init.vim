@@ -149,6 +149,9 @@ inoremap <C-v> <Esc>"+pa
 inoremap <C-s> <Esc>:update<cr>
 nnoremap <C-s> :update<cr>
 
+" Update open buffer every time we switch back to VIM
+au FocusGained * checktime
+
 " Quit VIM
 nnoremap <c-q>     :q<cr>
 
