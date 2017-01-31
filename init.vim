@@ -221,7 +221,7 @@ nmap t :
 
 " Start search with with 's' in normal mode 
 nmap s /
-vnoremap s y/<C-r><C-w><CR>N
+vnoremap s y/<C-r>"<CR>N
 
 " Vertically center search results
 nnoremap n nzz
@@ -257,7 +257,7 @@ nmap <leader>t :FZF<CR>
 nmap <leader>b :Buffers<CR>
 nmap <leader>f :Ag 
 nmap <leader>F :Ag <C-r><C-w><CR>
-vmap <leader>f y:Ag <C-r><C-w><CR>
+vmap <leader>f y:Ag <C-r>"<CR>
 nmap <leader>g :GFiles?<CR>
 
 " EasyMotion
