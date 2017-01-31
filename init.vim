@@ -50,6 +50,7 @@ Plug 'wavded/vim-stylus', { 'for': 'stylus' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
+Plug 'lervag/vimtex', { 'for': 'tex' }
 
 call plug#end()
 
@@ -273,6 +274,9 @@ nmap <leader>l :ll<CR>
 
 " JS-Doc
 nmap <leader>d <Plug>(jsdoc)
+
+" Vimtex
+map <leader>q <Plug>(vimtex-compile-toggle)
 
 " ============================================================================
 " FOLDS
