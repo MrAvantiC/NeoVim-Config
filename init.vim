@@ -139,6 +139,9 @@ highlight MatchParen cterm=bold ctermbg=none ctermfg=015
 " Remappings for escape-key
 inoremap jj <Esc>
 
+" Avoid annoying range-errors when leaving visual mode
+map <silent> <esc> <esc>
+
 " Copy and Paste from clipboard
 nnoremap <leader>y "+y
 vnoremap <leader>y "+y
