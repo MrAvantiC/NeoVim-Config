@@ -282,6 +282,10 @@ nmap <leader>d <Plug>(jsdoc)
 " Vimtex
 map <leader>q <Plug>(vimtex-compile-toggle)
 
+" Qfreplace
+nmap <leader>a :call AlignLinesInBuffer()<cr>
+
+
 " ============================================================================
 " FOLDS
 " ============================================================================
@@ -320,3 +324,10 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 autocmd FileType php,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
+" Select all lines and indent them all the way to the left (used in Qfreplace)
+function! AlignLinesInBuffer ()
+  call feedkeys("\<C-a>10>>\<Esc>") 
+endfun
+au FileType qfreplace au BufEnter <buffer> :call AlignLinesInBuffer()
+
