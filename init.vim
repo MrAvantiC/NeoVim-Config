@@ -240,6 +240,7 @@ map <silent> <Esc> :nohlsearch<CR>
 
 " qq to record macro, Q to replay it
 nnoremap Q @q
+vnoremap Q :normal @q<CR>
 
 " Show highligh-group for item under cursor
 nmap <leader>h :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
