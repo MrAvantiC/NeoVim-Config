@@ -139,8 +139,6 @@ highlight MatchParen cterm=bold ctermbg=none ctermfg=015
 " Remappings for escape-key
 inoremap jj <Esc>
 
-" Avoid annoying range-errors when leaving visual mode
-map <silent> <esc> <esc>
 
 " Copy and Paste from clipboard
 nnoremap <leader>y "+y
@@ -244,6 +242,9 @@ vnoremap Q :normal @q<CR>
 
 " Show highligh-group for item under cursor
 nmap <leader>h :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
+
+" Avoid annoying range-errors when leaving visual mode
+map <silent> <esc> <esc>
 
 " ============================================================================
 " KEYBINDINGS - PLUGINS
