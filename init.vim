@@ -244,7 +244,7 @@ vnoremap Q :normal @q<CR>
 nmap <leader>h :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
 
 " Avoid annoying range-errors when leaving visual mode
-map <silent> <esc> <esc>
+vmap <silent> <esc> <esc>
 
 " ============================================================================
 " KEYBINDINGS - PLUGINS
