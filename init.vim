@@ -155,7 +155,7 @@ nnoremap <C-s> :update<cr>
 au FocusGained * checktime
 
 " Quit VIM
-nnoremap <c-q>     :q<cr>
+nnoremap <c-q>     :q!<cr>
 
 " Select all with ctrl+a
 map <C-A> <Esc>ggVG
