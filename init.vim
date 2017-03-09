@@ -246,6 +246,9 @@ nmap <leader>h :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
 " Avoid annoying range-errors when leaving visual mode
 vmap <silent> <esc> <esc>
 
+" Make esc working in select-mode
+smap <esc> <c-o><esc>
+
 " ============================================================================
 " KEYBINDINGS - PLUGINS
 " ============================================================================
