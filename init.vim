@@ -230,8 +230,8 @@ nnoremap n nzz
 nnoremap N Nzz
 
 " Shortcut for substitutes
-nmap <leader>s :s/
-nmap <leader>S :%s/
+map <leader>s :s//g<Left><Left>
+map <leader>S :%s//g<Left><Left>
 
 " Clear highlighted search results
 map <silent> <Esc> :nohlsearch<CR>
