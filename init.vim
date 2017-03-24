@@ -174,6 +174,9 @@ nnoremap <leader><leader>j J
 " Select all with ctrl+a
 map <C-A> <Esc>ggVG
 
+" Cut line
+nmap X dd
+
 " Delete line in insert mode
 inoremap <C-d> <Esc>ddi
 
