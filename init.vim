@@ -165,8 +165,9 @@ nmap j gj
 nmap k gk
 
 " Faster Scrolling
-nmap J 5j
-nmap K 5k
+map J 5j
+map K 5k
+
 " Join lines
 nnoremap <leader><leader>j J
 
