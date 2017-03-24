@@ -158,7 +158,7 @@ au FocusGained * checktime
 nnoremap <c-q>     :q!<cr>
 
 " Select all with ctrl+a
-map <C-A> <Esc>ggVG
+"map <C-A> <Esc>ggVG
 
 " Move linewise up and down, even on wrapped lines
 nmap j gj
@@ -170,9 +170,6 @@ map K 5k
 
 " Join lines
 nnoremap <leader><leader>j J
-
-" Select all with ctrl+a
-map <C-A> <Esc>ggVG
 
 " Cut line
 nmap X dd
@@ -220,6 +217,7 @@ vnoremap L g_
 
 " Remap move to beginning/end of buffer
 nnoremap <CR> G
+vnoremap <CR> G
 nnoremap <BS> gg
 
 " Enter linenumbers faster
