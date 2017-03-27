@@ -18,6 +18,12 @@ snippet w "width"
 width ${1:auto}$0
 endsnippet
 
+snippet size "height+width" b
+height ${1:auto}
+width $1
+$0
+endsnippet
+
 snippet maxw "max-width" A
 max-width ${1:auto}$0
 endsnippet
@@ -64,6 +70,14 @@ endsnippet
 
 snippet fw "flex-wrap" A
 flex-wrap ${1:wrap}$0
+endsnippet
+
+snippet fb "flex-basis" A
+flex-basis ${1:100%}$0
+endsnippet
+
+snippet f "flex" b
+flex ${1:1} ${2:0} ${3:100%}$0
 endsnippet
 
 snippet pa "position:absolute" A
