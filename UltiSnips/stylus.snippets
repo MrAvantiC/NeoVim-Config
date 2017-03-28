@@ -28,7 +28,7 @@ snippet maxw "max-width" A
 max-width ${1:auto}$0
 endsnippet
 
-snippet minxw "min-width" A
+snippet minw "min-width" A
 min-width ${1:auto}$0
 endsnippet
 
@@ -215,6 +215,14 @@ endsnippet
 
 snippet ! "!important" A
 !important
+endsnippet
+
+snippet cf "clearfix" A
+&:after
+	display block
+	content ''
+	clear both
+$0
 endsnippet
 
 

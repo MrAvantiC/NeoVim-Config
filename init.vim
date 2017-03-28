@@ -158,7 +158,7 @@ au FocusGained * checktime
 nnoremap <c-q>     :q!<cr>
 
 " Select all with ctrl+a
-"map <C-A> <Esc>ggVG
+map <C-A> <Esc>ggVG
 
 " Move linewise up and down, even on wrapped lines
 nmap j gj
