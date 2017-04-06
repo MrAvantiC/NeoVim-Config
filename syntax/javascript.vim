@@ -2,6 +2,7 @@
 hi jsString ctermfg=114
 " Keywords
 hi jsThis ctermfg=140
+hi link jsSuper jsThis
 hi link jsImport jsThis
 hi link jsFrom jsImport
 hi link jsExport jsImport
@@ -11,8 +12,12 @@ hi link jsRepeat jsImport
 hi link jsTernaryIfOperator jsImport
 " Keys in key/value-objects
 hi jsObjectStringKey ctermfg=185
+"hi link jsObjectProp jsObjectStringKey
+hi link jsObjectKey jsObjectStringKey
 " variable definitions
 hi jsStorageClass ctermfg=081
+hi link jsClassKeyword jsStorageClass
+hi link jsExtendsKeyword jsStorageClass
 " javascript native objects/prototypes
 hi link jsPrototype jsStorageClass
 hi link jsGlobalObjects jsStorageClass
@@ -22,6 +27,7 @@ hi link jsReturn jsStorageClass
 hi link jsNull jsBooleanTrue
 " function definition
 hi jsObjectFuncName ctermfg=214
+hi link jsClassFuncName jsObjectFuncName
 hi link jsFunction jsStorageClass
 " function key
 hi jsFunctionKey ctermfg=214
@@ -29,6 +35,10 @@ hi jsFunctionKey ctermfg=214
 hi jsFuncCall ctermfg=040
 " Arrow function
 hi jsArrowFunction ctermfg=015
+" Class Definition
+hi jsClassDefinition ctermfg=015
+" Equal signs
+hi jsOperator ctermfg=015
 " normal numbers
 hi jsNumber ctermfg=015
 " template strings
