@@ -10,14 +10,16 @@ hi link jsExportDefault jsImport
 hi link jsConditional jsImport
 hi link jsRepeat jsImport
 hi link jsTernaryIfOperator jsImport
+hi link jsClassKeyword jsImport
+hi link jsExtendsKeyword jsImport
 " Keys in key/value-objects
 hi jsObjectStringKey ctermfg=185
 "hi link jsObjectProp jsObjectStringKey
 hi link jsObjectKey jsObjectStringKey
 " variable definitions
 hi jsStorageClass ctermfg=081
-hi link jsClassKeyword jsStorageClass
-hi link jsExtendsKeyword jsStorageClass
+"hi link jsClassKeyword jsStorageClass
+"hi link jsExtendsKeyword jsStorageClass
 " javascript native objects/prototypes
 hi link jsPrototype jsStorageClass
 hi link jsGlobalObjects jsStorageClass
