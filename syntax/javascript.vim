@@ -30,6 +30,7 @@ hi link jsNull jsBooleanTrue
 " function definition
 hi jsObjectFuncName ctermfg=214
 hi link jsClassFuncName jsObjectFuncName
+hi link jsClassProperty jsObjectFuncName
 hi link jsFunction jsStorageClass
 " function key
 hi jsFunctionKey ctermfg=214
