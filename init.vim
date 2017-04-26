@@ -196,6 +196,12 @@ inoremap <S-Tab> <C-d>
 nnoremap <silent> <Left> :bprev<CR>
 nnoremap <silent> <Right> :bnext<CR>
 
+" Open splits
+nnoremap <leader>v <C-W>v
+nnoremap <leader>x <C-W>s
+" normalize windows -> needed?
+"nnoremap <leader>y <C-W>=
+
 " Move between splits with ctrl+arrows
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
@@ -293,7 +299,7 @@ nmap <leader>d <Plug>(jsdoc)
 map <leader>q <Plug>(vimtex-compile-toggle)
 
 " Qfreplace
-nmap <leader>a :call AlignLinesInBuffer()<cr>
+"nmap <leader>a :call AlignLinesInBuffer()<cr>
 
 
 " ============================================================================
@@ -336,8 +342,8 @@ endfun
 autocmd FileType php,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 " Select all lines and indent them all the way to the left (used in Qfreplace)
-function! AlignLinesInBuffer ()
-  call feedkeys("\<C-a>10>>\<Esc>") 
-endfun
-au FileType qfreplace au BufEnter <buffer> :call AlignLinesInBuffer()
+"function! AlignLinesInBuffer ()
+  "call feedkeys("\<C-a>10>>\<Esc>") 
+"endfun
+"au FileType qfreplace au BufEnter <buffer> :call AlignLinesInBuffer()
 
