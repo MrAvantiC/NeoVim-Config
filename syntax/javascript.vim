@@ -57,4 +57,4 @@ hi jsDocParam ctermfg=247
 hi link jsDocType jsComment
 hi link jsDocTypeNoParam jsComment
 
-map <leader>u :source ~/.config/nvim/syntax/javascript.vim<CR>
+"map <leader>u :source ~/.config/nvim/syntax/javascript.vim<CR>

@@ -49,6 +49,7 @@ Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
 Plug 'blueyed/smarty.vim', { 'for': 'smarty' }
 Plug 'wavded/vim-stylus', { 'for': 'stylus' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx'
 Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 Plug 'lervag/vimtex', { 'for': 'tex' }
