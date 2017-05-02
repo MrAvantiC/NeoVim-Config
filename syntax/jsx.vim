@@ -8,4 +8,4 @@ hi xmlString ctermfg=114
 
 hi jsNumber ctermfg=253
 
-"map <leader>u :source ~/.config/nvim/syntax/jsx.vim<CR>
+map <leader>u :source ~/.config/nvim/syntax/jsx.vim<CR>
