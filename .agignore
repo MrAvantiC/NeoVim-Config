@@ -1,5 +1,5 @@
 # Add comments like this
-node_modules
+#node_modules
 yarn.lock
 *.min.css
 *.min.css.map

@@ -160,6 +160,8 @@ nnoremap <c-q>     :q!<cr>
 
 " Select all with ctrl+a
 map <C-A> <Esc>ggVG
+" Copy everything in current buffer
+nnoremap <leader>a ggVG"+y
 
 " Move linewise up and down, even on wrapped lines
 nmap j gj
@@ -201,7 +203,7 @@ nnoremap <silent> <Right> :bnext<CR>
 nnoremap <leader>v <C-W>v
 nnoremap <leader>x <C-W>s
 " normalize windows -> needed?
-"nnoremap <leader>y <C-W>=
+nnoremap <leader>y <C-W>=
 
 " Move between splits with ctrl+arrows
 nnoremap <C-j> <C-W>j
