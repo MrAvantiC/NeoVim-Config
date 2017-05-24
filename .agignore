@@ -1,6 +1,8 @@
 # Add comments like this
 node_modules
 yarn.lock
+main.css
+main.js
 *.min.css
 *.min.css.map
 *.min.js
