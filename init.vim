@@ -117,19 +117,19 @@ autocmd BufRead * normal zz
 let g:seoul256_background = 235
 color seoul256
 
-" LineNumbers
+ "LineNumbers
 highlight LineNr ctermfg=243
 highlight CursorLineNr ctermfg=255 ctermbg=236
 
-" Highlight the current line
+ "Highlight the current line
 set cursorline
 highlight CursorLine ctermfg=none ctermbg=236
 
-" Suggestion popup menu
+ "Suggestion popup menu
 highlight Pmenu ctermfg=255 ctermbg=237
 highlight PmenuSel ctermfg=235 ctermbg=250
 
-" Highlight Matching parentheses
+ "Highlight Matching parentheses
 highlight MatchParen cterm=bold ctermbg=none ctermfg=015
 
 
@@ -299,7 +299,8 @@ nmap <leader>l :ll<CR>
 nmap <leader>d <Plug>(jsdoc)
 
 " Vimtex
-map <leader>q <Plug>(vimtex-compile-toggle)
+"map <leader>q <Plug>(vimtex-compile-toggle)
+map <leader>q :VimtexCompile<CR>
 
 " Qfreplace
 "nmap <leader>a :call AlignLinesInBuffer()<cr>
