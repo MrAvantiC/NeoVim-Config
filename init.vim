@@ -220,9 +220,9 @@ map <C-w> :bd<Return>
 
 " Remap move to beginning/end of line
 nnoremap H _
-nnoremap L g_
+nnoremap L $
 vnoremap H _
-vnoremap L g_
+vnoremap L $
 
 " Remap move to beginning/end of buffer
 nnoremap <CR> G
