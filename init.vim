@@ -155,9 +155,6 @@ nnoremap <C-s> :update<cr>
 " Update open buffer every time we switch back to VIM
 au FocusGained * checktime
 
-" Quit VIM
-nnoremap <c-q>     :q!<cr>
-
 " Select all with ctrl+a
 map <C-A> <Esc>ggVG
 " Copy everything in current buffer
@@ -216,7 +213,14 @@ nnoremap <C-l> <C-W>l
 " see also: https://github.com/neovim/neovim/wiki/FAQ#my-ctrl-h-mapping-doesnt-work
 
 " Close current buffer with ctrl+w
-map <C-w> :bd<Return>
+"map <C-w> :bd<Return>
+map<silent> <C-w> :bp\|bd #<Return>
+map<silent> <C-q> :bd<Return>
+map<silent> <leader>w :q!<Return>
+
+" Quit VIM
+"nnoremap <c-q> q!<cr>
+
 
 " Remap move to beginning/end of line
 nnoremap H _
@@ -283,14 +287,14 @@ nmap <leader>g :GFiles?<CR>
 " EasyMotion
 map f <Plug>(easymotion-bd-f)
 map F <Plug>(easymotion-bd-f2)
-map <leader>w <Plug>(easymotion-bd-w)
-map <leader>W <Plug>(easymotion-bd-W)
-map <leader>e <Plug>(easymotion-bd-e)
-map <leader>E <Plug>(easymotion-bd-E)
-map <leader>j <Plug>(easymotion-j)
-map <leader>k <Plug>(easymotion-k)
-map <leader>J <Plug>(easymotion-eol-j)
-map <leader>K <Plug>(easymotion-eol-k)
+"map <leader>w <Plug>(easymotion-bd-w)
+"map <leader>W <Plug>(easymotion-bd-W)
+"map <leader>e <Plug>(easymotion-bd-e)
+"map <leader>E <Plug>(easymotion-bd-E)
+"map <leader>j <Plug>(easymotion-j)
+"map <leader>k <Plug>(easymotion-k)
+"map <leader>J <Plug>(easymotion-eol-j)
+"map <leader>K <Plug>(easymotion-eol-k)
 
 " Neomake -> go to next error/warning
 nmap <leader>l :ll<CR>
