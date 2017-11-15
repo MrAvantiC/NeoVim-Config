@@ -84,8 +84,8 @@ set shiftwidth=2
 set smartindent
 
 " Searching
-set ignorecase
-"set nohlsearch
+" set ignorecase
+" set nohlsearch
 
 " Align breaking lines with the line above
 set breakindent
@@ -263,6 +263,11 @@ vmap <silent> <esc> <esc>
 
 " Make esc working in select-mode
 smap <esc> <c-o><esc>
+
+" Operations until next closing brackets
+nmap cb c%
+nmap db d%
+vmap b %
 
 " ============================================================================
 " KEYBINDINGS - PLUGINS
