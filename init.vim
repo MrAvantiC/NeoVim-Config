@@ -22,6 +22,7 @@ Plug 'thinca/vim-qfreplace'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 " Autocompletions
 Plug 'SirVer/ultisnips'
