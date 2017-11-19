@@ -19,6 +19,7 @@ Plug 'easymotion/vim-easymotion'
 " Editing
 Plug 'scrooloose/nerdcommenter'
 Plug 'thinca/vim-qfreplace'
+Plug 'Raimondi/delimitMate'
 
 " Utility
 Plug 'itchyny/lightline.vim'
