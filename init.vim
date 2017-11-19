@@ -93,6 +93,9 @@ set smartindent
 
 " Align breaking lines with the line above
 set breakindent
+
+" Searching
+set ignorecase
     
 " Allow hiding buffers without needing to save them
 set hidden
@@ -197,7 +200,8 @@ nnoremap n nzz
 nnoremap N Nzz
 
 " Shortcut for substitutes
-map <leader>S :%s//g<Left><Left>
+nmap <leader>s :%s//gI<Left><Left><Left>
+vmap <leader>s :s//gI<Left><Left><Left>
 
 " Clear highlighted search results
 map <silent> <Esc> :nohlsearch<CR>
