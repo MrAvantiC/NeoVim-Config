@@ -1,0 +1,189 @@
+snippet html5 "html5 document definition"
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>${1:Page Title}</title>
+		${2:<!-- Stylesheets -->}
+	</head>
+	<body>
+		:${VISUAL}
+		${3:<!-- Scripts -->}
+	</body>
+</html>
+endsnippet
+
+snippet link "stylesheet"
+<link href="${1:style.css}" rel="stylesheet">
+endsnippet
+
+snippet script "javascript"
+<script type="${1:text/javascript}" src="${2:javascript.js}"></script>
+endsnippet
+
+snippet style "style-block"
+<style type="text/css">
+	${1:${VISUAL}}
+</style>
+endsnippet
+
+snippet c "class"
+class="${1}"$0
+endsnippet
+
+snippet div 
+<div${1}>
+	${2:${VISUAL}}
+</div>
+endsnippet
+
+snippet span 
+<span${1}>${2:${VISUAL}}</span>
+endsnippet
+
+snippet figure 
+<figure class="${1}">
+	${2:${VISUAL}}
+</figure>
+endsnippet
+
+snippet img
+<img class="${1}" src="${2}" alt="${3}">
+endsnippet
+
+snippet h1 
+<h1${1}>${2:${VISUAL}}</h1>
+endsnippet
+
+snippet h2 
+<h2${1}>${2:${VISUAL}}</h2>
+endsnippet
+
+snippet h3 
+<h3${1}>${2:${VISUAL}}</h3>
+endsnippet
+
+snippet a 
+<a class="${1}" href="${2}">
+	${3:${VISUAL}}
+</a>
+endsnippet
+
+snippet p 
+<p${1}>
+	${2:${VISUAL}}
+</p>
+endsnippet
+
+snippet ul "unordered list"
+<ul class="${1}">
+	$0
+</ul>
+endsnippet
+
+snippet ol "ordered list"
+<ol class="${1}">
+	$0
+</ol>
+endsnippet
+
+snippet li "list item"
+<li class="${1}">${2:${VISUAL}}</li>
+endsnippet
+
+snippet select "select"
+<select class="${1}" name="${2}">
+	$0
+</select>
+endsnippet
+
+snippet option "option"
+<option value="${1}">${2}</option>
+$0
+endsnippet
+
+snippet br "line break"
+<br>
+endsnippet
+
+snippet q "short quotation"
+<q class="${1}">${2:${VISUAL}}</q>
+endsnippet
+
+snippet strong "bold text"
+<strong>${1:${VISUAL}}</strong>
+endsnippet
+
+snippet header "introductory elements"
+<header class="${1}">
+	${2:${VISUAL}}
+</header>
+endsnippet
+
+snippet main "main-content of body"
+<main class="${1}">
+	${2:${VISUAL}}
+</main>
+endsnippet
+
+snippet footer "section-near content"
+<footer class="${1}">
+	${2:${VISUAL}}
+</footer>
+endsnippet
+
+snippet nav "nagivation links"
+<nav class="${1}">
+	${2:${VISUAL}}
+</nav>
+endsnippet
+
+snippet section "generic section of document"
+<section class="${1}">
+	${2:${VISUAL}}
+</section>
+endsnippet
+
+snippet article "self-contained part of document"
+<article class="${1}">
+	${2:${VISUAL}}
+</article>
+endsnippet
+
+snippet aside "sidebar / related content"
+<aside class="${1}">
+	${2:${VISUAL}}
+</aside>
+endsnippet
+
+snippet label "label"
+<label for="${1}">${2:${VISUAL}}</label>
+endsnippet
+
+snippet input "input"
+<input type="${1}" id="${2}">
+endsnippet
+
+snippet table "table" 
+<table>
+	$0
+</table>
+endsnippet
+
+snippet tbody "table-body" 
+<tbody>
+	$0
+</tbody>
+endsnippet
+
+snippet tr "table-row"
+<tr>
+	${1:${VISUAL}}
+</tr>
+endsnippet
+
+snippet td "table-cell"
+<td>
+	${1:${VISUAL}}
+</td>
+endsnippet

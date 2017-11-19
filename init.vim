@@ -22,6 +22,9 @@ Plug 'thinca/vim-qfreplace'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'
 
+" Autocompletions
+Plug 'SirVer/ultisnips'
+
 " Utility
 Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'
