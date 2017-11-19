@@ -8,6 +8,10 @@ call plug#begin()
 " Colors
 Plug 'junegunn/seoul256.vim'
 
+" Utility
+Plug 'itchyny/lightline.vim'
+Plug 'taohex/lightline-buffer'
+
 " Language support
 Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
 Plug 'blueyed/smarty.vim', { 'for': 'smarty' }
@@ -47,6 +51,8 @@ let $LANG = 'en_US'
 " Set the Leader to <Space>
 let mapleader = " "
 
+" Always use system clipboard
+set clipboard=unnamed
 
 " Display line numbers (relative in Normal and absolute in Insert)
 set relativenumber number
