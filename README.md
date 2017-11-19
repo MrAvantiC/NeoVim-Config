@@ -100,6 +100,6 @@ After that modify the `.eslintrc` like the following:
   }
 }
 ```
-_Note: Make sure to but prettier-extension last so it can overried the configuration of other extensions._
+_Note: Make sure to put prettier-extension last so it can overried the configuration of other extensions._
 
 Again, running `:ALEFix` will allow you to fix occurring errors and warnings.
