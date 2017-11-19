@@ -1,8 +1,8 @@
 # My NVIM-configuration
 
 ## Requirement
-* at least NVIM 0.2.0
-* AG (SilverSearcher) for searching in files
+* installed version of NVIM
+* AG (SilverSearcher) 
 * JS-Beautify for autoformatting
 * Tern for JavaScript-autosuggestions
 
@@ -35,16 +35,14 @@ For example install vim-fugitive just add the plugin-source (see [examples](http
   * Global code-style settings (indenting, scrolling, etc.)
   * Custom, global colors for the terminal (only works properly if terminal supports it)
   * Most of the general, custom keybinds
-* .agignore
-  * Contains global search-ignore-patterns for `<Leader>f`
+* .ignore
+  * Contains global search-ignore-patterns for FZF and AG
 * plugged/
   * Location of installed plugin-files
 * ftplugin/
   * Files containing settings for specific file-types
 * plugin/
   * Files with plugin-specific settings (e.g. plugin customization and individual shortcuts)
-* indent/
-  * Files containing filetype-specific indentation-settings
 * syntax/
   * Filetype-specific color-settings
 * UltiSnips/
@@ -56,8 +54,8 @@ For text searches, FZF acts as a wrapper for AG (SilverSearcher).
 
 There are two ways to specify what files to ignore:
 
-1. Add them to the global `.agignore`-file located in the `nvim`-folder. Suited well for common files like `node-modules` or minified files
-2. Add them to a local .agignore-file in the root of your project-folder. Suited well for project-specific ignore-patterns.
+1. Add them to the global `.ignore`-file located in the `nvim`-folder. Suited well for common files like `node-modules` or minified files
+2. Add them to a local .ignore-file in the root of your project-folder. Suited well for project-specific ignore-patterns.
 
 ## Autosuggestion
 All filetypes have autosuggestions powered by Deoplete. Additionally, JavaScript-files get improved suggestions through code analysis by Tern.
