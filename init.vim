@@ -13,6 +13,9 @@ Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 
+" Editing
+Plug 'scrooloose/nerdcommenter'
+
 " Utility
 Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'
@@ -216,6 +219,8 @@ map <leader>u :source ~/.config/nvim/init.vim<CR>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>c :NERDTreeFind<CR>
 
+" NerdCommenter
+map <C-c> <plug>NERDCommenterToggle
 
 " ============================================================================
 " FUNCTIONS
