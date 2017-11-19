@@ -23,6 +23,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'triglav/vim-visual-increment'
 
 " Autocompletions
 Plug 'SirVer/ultisnips'
