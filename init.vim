@@ -8,6 +8,11 @@ call plug#begin()
 " Colors
 Plug 'junegunn/seoul256.vim'
 
+" Navigation
+Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
+
 " Utility
 Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'
@@ -201,6 +206,15 @@ nmap <leader>h :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
 
 " Update config
 map <leader>u :source ~/.config/nvim/init.vim<CR>
+
+
+" ============================================================================
+" KEYBINDINGS - PLUGINS
+" ============================================================================
+
+" NerdTree
+map <leader>n :NERDTreeToggle<CR>
+map <leader>c :NERDTreeFind<CR>
 
 
 " ============================================================================
