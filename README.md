@@ -3,8 +3,6 @@
 ## Requirement
 * installed version of NVIM
 * AG (SilverSearcher) 
-* JS-Beautify for autoformatting
-* Tern for JavaScript-autosuggestions
 
 ## Installation
 1. Install NVIM with at least version 0.2.0 on current machine
@@ -18,12 +16,8 @@
   * After installing, do `:PlugUpdate` do update all plugins
 5. To make use of text-search, we need to install AG (aka SilverSearcher)
   * apt-get on Ubuntu or brew on OSX: https://github.com/ggreer/the_silver_searcher
-6. Enable JavaSript-Autosuggestions by installing Tern
-  * `npm install -g tern`
-7. For automatic formatting of files we need JS-Beautify
-  * `npm install -g js-beautify`
-8. Make sure your terminal supports 256 colors (e.g. on mac: xterm-256color in iterm2)
-9. Install a custom font of your choice to make text look good (e.g. Sauce Code Powerline light)
+6. Make sure your terminal supports 256 colors (e.g. on mac: xterm-256color in iterm2)
+7. Install a custom font of your choice to make text look good (e.g. Sauce Code Powerline light)
   * Note: To get the Devicons inside NerdTree working you need to install a patched font: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ## Installing new plugins
@@ -76,17 +70,36 @@ A sample file could look like this:
 }
 ```
 
-## Formatting
-JS-Files will automatically get formatted on save. To enable this, JS-Beautify has to be installed globally.
+## Linting
+We are using [ALE](https://github.com/w0rp/ale) for linting.
 
-The default configuration of JS-Beautify does not support inline-formatting of ES6-Destructuring. This can be fixed with a `.jsbeautifyrc`-file that has to be put either in the `HOME`-directory or your project-directory:
+The plugin detects the current filetype and looks for linters to execute.
+Currently all javascript files will automatically be linted with if ESLint is available globally or locally in the working directory, like with: `npm install -D eslint`
+The Linters default behaviour is to look in a `.eslintrc` in the root of the project and lint all JavaScript-files on save.
+
+Calling `:ALEFix` inside NVIM will automatically fix most of the simple linting issues.
+
+## Formatting
+[ALE](https://github.com/w0rp/ale) can also be used for formatting, e.g. using ESLint with a prettier-plugin.
+All you need to do is install the dependencies to the project you need formatting on: 
+`npm install -D prettier eslint-plugin-prettier eslint-config-prettier`
+(also install ESLint if you haven't already)
+
+After that modify the `.eslintrc` like the following:
 ```
 {
-  "allowed_file_extensions": ["js", "json"],
-  "indent_size": 2,
-  "brace_style": "collapse-preserve-inline"
+  “extends”: [
+    ...
+    “prettier”
+  ],
+  “plugins”: [
+    “prettier”
+  ],
+  “rules”: {
+    “prettier/prettier”: “error”
+  }
 }
 ```
+_Note: Make sure to but prettier-extension last so it can overried the configuration of other extensions._
 
-## Linting
-If a local installation of `eslint` is present in the working directory, it will automatically be recognized and used to lint all JavaScript-files on save.
+Again, running `:ALEFix` will allow you to fix occurring errors and warnings.

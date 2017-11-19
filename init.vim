@@ -26,6 +26,9 @@ Plug 'tpope/vim-surround'
 " Autocompletions
 Plug 'SirVer/ultisnips'
 
+" Linting
+Plug 'w0rp/ale'
+
 " Utility
 Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'
