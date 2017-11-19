@@ -188,3 +188,15 @@ nmap <leader>h :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
 map <leader>u :source ~/.config/nvim/init.vim<CR>
 
 
+" ============================================================================
+" FUNCTIONS
+" ============================================================================
+
+" Remove trailing whitespaces for specified filetypes
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+autocmd FileType php,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
