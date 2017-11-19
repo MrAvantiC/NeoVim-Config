@@ -21,6 +21,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'thinca/vim-qfreplace'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'
+Plug 'tpope/vim-surround'
 
 " Autocompletions
 Plug 'SirVer/ultisnips'
