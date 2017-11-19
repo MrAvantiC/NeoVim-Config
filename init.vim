@@ -12,6 +12,8 @@ Plug 'junegunn/seoul256.vim'
 Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
+Plug 'junegunn/fzf', { 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
 
 " Editing
 Plug 'scrooloose/nerdcommenter'
@@ -223,6 +225,15 @@ map <leader>c :NERDTreeFind<CR>
 
 " NerdCommenter
 map <C-c> <plug>NERDCommenterToggle
+
+" FZF
+nmap <leader>t :FZF<CR>
+nmap <leader>b :Buffers<CR>
+nmap <leader>f :Ag 
+nmap <leader>F :Ag <C-r><C-w><CR>
+vmap <leader>f y:Ag <C-r>"<CR>
+nmap <leader>g :GFiles?<CR>
+
 
 " ============================================================================
 " FUNCTIONS
