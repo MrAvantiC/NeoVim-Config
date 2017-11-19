@@ -14,6 +14,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'easymotion/vim-easymotion'
 
 " Editing
 Plug 'scrooloose/nerdcommenter'
@@ -233,6 +234,10 @@ nmap <leader>f :Ag
 nmap <leader>F :Ag <C-r><C-w><CR>
 vmap <leader>f y:Ag <C-r>"<CR>
 nmap <leader>g :GFiles?<CR>
+
+" EasyMotion
+map f <Plug>(easymotion-bd-f)
+map F <Plug>(easymotion-bd-f2)
 
 
 " ============================================================================
