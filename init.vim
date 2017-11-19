@@ -20,6 +20,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdcommenter'
 Plug 'thinca/vim-qfreplace'
 Plug 'Raimondi/delimitMate'
+Plug 'Valloric/MatchTagAlways'
 
 " Utility
 Plug 'itchyny/lightline.vim'
