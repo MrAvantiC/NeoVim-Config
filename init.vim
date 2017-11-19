@@ -96,6 +96,9 @@ set breakindent
 
 " Searching
 set ignorecase
+
+" Show live feedback during search&replace
+set inccommand=nosplit
     
 " Allow hiding buffers without needing to save them
 set hidden
@@ -200,8 +203,8 @@ nnoremap n nzz
 nnoremap N Nzz
 
 " Shortcut for substitutes
-nmap <leader>s :%s//gI<Left><Left><Left>
-vmap <leader>s :s//gI<Left><Left><Left>
+nmap <leader>s :%s/
+vmap <leader>s :s/
 
 " Clear highlighted search results
 map <silent> <Esc> :nohlsearch<CR>
