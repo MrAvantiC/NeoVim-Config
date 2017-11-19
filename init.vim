@@ -25,6 +25,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'triglav/vim-visual-increment'
 Plug 'junegunn/vim-easy-align'
+Plug 'FooSoft/vim-argwrap'
 
 " Autocompletions
 Plug 'SirVer/ultisnips'
@@ -264,6 +265,9 @@ map F <Plug>(easymotion-bd-f2)
 " EasyAlign
 nmap ga <Plug>(EasyAlign)
 vmap ga <Plug>(EasyAlign)
+
+" ArgWrap
+nnoremap <silent> <leader>d :ArgWrap<CR>
 
 
 " ============================================================================
