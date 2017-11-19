@@ -19,6 +19,8 @@ Plug 'scrooloose/nerdcommenter'
 " Utility
 Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Language support
 Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
