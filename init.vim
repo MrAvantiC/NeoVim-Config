@@ -56,6 +56,8 @@ highlight CursorLine ctermfg=none ctermbg=236
 highlight LineNr ctermfg=243
 highlight CursorLineNr ctermfg=255 ctermbg=236
 
+" Highlight Matching parentheses
+highlight MatchParen cterm=bold ctermbg=none ctermfg=015
 
 " ============================================================================
 " BASIC SETTINGS
