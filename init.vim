@@ -98,7 +98,7 @@ set breakindent
 set ignorecase
 
 " Show live feedback during search&replace
-set inccommand=nosplit
+set inccommand=split
     
 " Allow hiding buffers without needing to save them
 set hidden
