@@ -24,6 +24,7 @@ Plug 'Valloric/MatchTagAlways'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'triglav/vim-visual-increment'
+Plug 'junegunn/vim-easy-align'
 
 " Autocompletions
 Plug 'SirVer/ultisnips'
@@ -259,6 +260,10 @@ nmap <leader>g :GFiles?<CR>
 " EasyMotion
 map f <Plug>(easymotion-bd-f)
 map F <Plug>(easymotion-bd-f2)
+
+" EasyAlign
+nmap ga <Plug>(EasyAlign)
+vmap ga <Plug>(EasyAlign)
 
 
 " ============================================================================
