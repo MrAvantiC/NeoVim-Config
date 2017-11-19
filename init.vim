@@ -18,6 +18,7 @@ Plug 'easymotion/vim-easymotion'
 
 " Editing
 Plug 'scrooloose/nerdcommenter'
+Plug 'thinca/vim-qfreplace'
 
 " Utility
 Plug 'itchyny/lightline.vim'
