@@ -2,12 +2,26 @@
 # Common Properties
 #
 
+snippet med "media" A
+@media screen and (${1:min-width:} ${2:766}px}) {
+	$0
+}
+endsnippet
+
 snippet h "height" 
 height: ${1:auto};$0
 endsnippet
 
 snippet w "width" 
 width: ${1:auto};$0
+endsnippet
+
+snippet maxw "max-width" A
+max-width: ${1:auto};$0
+endsnippet
+
+snippet minw "min-width" A
+min-width: ${1:auto};$0
 endsnippet
 
 snippet dn "display:none" A
