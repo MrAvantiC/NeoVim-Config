@@ -16,7 +16,7 @@ let g:ale_lint_on_text_changed = 'never'
 " Modify icons and colors
 let g:ale_sign_error = '✖'
 hi ALEErrorSign ctermfg=160 ctermbg=236
-let g:ale_sign_warning = '✖'
-hi ALEWarningSign ctermfg=160 ctermbg=236
+let g:ale_sign_warning = '⚠'
+hi ALEWarningSign ctermfg=222 ctermbg=236
 
 
