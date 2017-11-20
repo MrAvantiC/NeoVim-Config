@@ -164,7 +164,7 @@ nnoremap <C-s> :update<cr>
 map <C-A> <Esc>ggVG
 
 " Copy everything in current buffer
-nnoremap <leader>a ggVG"+y<C-o><C-o>
+nnoremap <leader>a <Down>ggVG"+y<Up><C-o><C-o>
 
 " Join lines
 nnoremap <leader><leader>j J
