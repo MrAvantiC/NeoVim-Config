@@ -30,8 +30,8 @@ Plug 'FooSoft/vim-argwrap'
 " Autocompletions
 Plug 'SirVer/ultisnips'
 
-" Linting
-Plug 'w0rp/ale'
+" Linting (only JS for now)
+Plug 'w0rp/ale', { 'for': ['javascript'] }
 
 " Utility
 Plug 'itchyny/lightline.vim'
