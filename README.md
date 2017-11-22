@@ -3,9 +3,10 @@
 ## Requirement
 * installed version of NVIM
 * AG (SilverSearcher) 
+* Node and NPM (for plugin post-install hook)
 
 ## Installation
-1. Install NVIM with at least version 0.2.0 on current machine
+1. Install NVIM 
   * apt-get on Ubuntu or brew on OSX: https://github.com/neovim/neovim/wiki/Installing-Neovim
   * Make sure install related python modules with it - for help see: `:help provider-python` in vim
 2. After installing, open up NVIM, do `:CheckHealth` and resolve eventual missing dependencies
@@ -51,22 +52,33 @@ There are two ways to specify what files to ignore:
 1. Add them to the global `.ignore`-file located in the `nvim`-folder. Suited well for common files like `node-modules` or minified files
 2. Add them to a local .ignore-file in the root of your project-folder. Suited well for project-specific ignore-patterns.
 
-## Autosuggestion
-All filetypes have autosuggestions powered by Deoplete. Additionally, JavaScript-files get improved suggestions through code analysis by Tern.
-To enable this, you need to have Tern installed globally (see above) and also have a `.tern-project`-file inside your current working directory, otherwise you only get standard suggestions
+## Autocompletion
+All filetypes have autocompletion powered by Deoplete. Additionally, JavaScript-files get improved completion through code analysis through TernJS.
+To enable this, you need to have Tern installed globallyand also have a `.tern-project`-file inside your current working directory, otherwise you only get default completions.
 
 A sample file could look like this:
 ```
 {
-  "ecmaVersion": 6,
+  "ecmaVersion": 7,
   "libs": [
-      "browser",
-      "jquery"
-    ],
+    "ecmascript",
+    "browser",
+    "react"
+  ],
   "loadEagerly": [
-      "src/scripts/vendor/jquery-2.2.0.js",
-      "src/scripts/lib/**/*.js"
-    ]
+    "node_modules/react/dist/react.js",
+    "node_modules/react-dom/dist/react-dom.js",
+    "node_modules/react-dom/dist/react-dom-server.js",
+    "node_modules/whatwg-fetch/fetch.js",
+    "node_modules/moment/moment.js"
+  ],
+  "plugins": {
+    "node": { },
+    "modules": { },
+    "es_modules" : { },
+    "doc_comment": { "fullDocs": true },
+    "complete_strings": {}
+  }
 }
 ```
 

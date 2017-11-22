@@ -29,6 +29,8 @@ Plug 'FooSoft/vim-argwrap'
 
 " Autocompletions
 Plug 'SirVer/ultisnips'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 
 " Linting (only JS for now)
 Plug 'w0rp/ale', { 'for': ['javascript'] }
@@ -71,6 +73,11 @@ highlight CursorLineNr ctermfg=255 ctermbg=236
 
 " Highlight Matching parentheses
 highlight MatchParen cterm=bold ctermbg=none ctermfg=015
+
+ "Suggestion popup menu
+highlight Pmenu ctermfg=255 ctermbg=237
+highlight PmenuSel ctermfg=235 ctermbg=250
+
 
 " ============================================================================
 " BASIC SETTINGS
@@ -222,7 +229,6 @@ map <silent> <Esc> :nohlsearch<CR>
 " Operations until next closing brackets
 nmap cb c%
 nmap db d%
-vmap b %
 
 " qq to record macro, Q to replay it
 nnoremap Q @q
