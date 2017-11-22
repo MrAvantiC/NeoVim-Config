@@ -47,6 +47,8 @@ Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx'
 Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'shime/vim-livedown', { 'for': 'markdown' }
 
 call plug#end()
 
