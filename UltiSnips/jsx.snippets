@@ -143,5 +143,11 @@ snippet label "label"
 endsnippet
 
 snippet input "input"
-<input type="${1}">
+<input type="${1:text}" name="${2}" value="${3}" ${4:required="required"} placeholder="${5}" />
+endsnippet
+
+snippet button "Button"
+<button type="${1:button}"${2}>
+	$0
+</button>
 endsnippet
