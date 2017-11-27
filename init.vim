@@ -31,6 +31,8 @@ Plug 'FooSoft/vim-argwrap'
 Plug 'SirVer/ultisnips'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+Plug 'Shougo/neopairs.vim'
+Plug 'othree/jspc.vim'
 
 " Linting (only JS for now)
 Plug 'w0rp/ale', { 'for': ['javascript'] }
