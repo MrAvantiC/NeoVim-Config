@@ -48,6 +48,12 @@ if (${1}) {
 }${0}
 endsnippet
 
+snippet for "for-loop" 
+for (${1:let i = 0}; ${2:i < x.length}; ${3:i++}) {
+	$0
+}
+endsnippet
+
 snippet forEach "iterate elements in array" i
 forEach((${1:el}${2:, i}) => {
 	${3}
@@ -82,4 +88,11 @@ endsnippet
 
 snippet pd "preventDefault" i
 preventDefault();
+endsnippet
+
+# testing
+snippet test "Jest-Test" 
+test('${1:description}', () => {
+	$0
+})
 endsnippet

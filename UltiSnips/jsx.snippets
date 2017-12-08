@@ -12,6 +12,12 @@ componentDidMount() {
 }
 endsnippet
 
+snippet "[A-Za-z]*cwu" "componentWillUnmount" rA
+componentWillUnmount() {
+	${0}
+}
+endsnippet
+
 snippet "[A-Za-z]*rnd" "render" rA
 render() {
 	${1:${VISUAL}}
@@ -138,16 +144,36 @@ snippet aside "sidebar / related content"
 </aside>
 endsnippet
 
+snippet form "form"
+<form>
+	$0
+<form>
+endsnippet
+
 snippet label "label"
-<label for="${1}">${2}</label>
+<label${1: for="${2}"}>${3}</label>
+$0
 endsnippet
 
 snippet input "input"
-<input type="${1:text}" name="${2}" value="${3}" ${4:required="required"} placeholder="${5}" />
+<input type="${1:text}" ${2:name="${3}"} ${4:value="${5}"} ${6:required="required"} ${7:placeholder="${8}"} />
 endsnippet
 
 snippet button "Button"
-<button type="${1:button}"${2}>
-	$0
-</button>
+<button type="${1:button}"${2}>$0</button>
+endsnippet
+
+# React specifics
+snippet state "new Component" b
+import React, { Component } from 'react'
+
+class ${1:MyClass} extends Component {
+	${2}render() {
+		return (
+			$0
+		)
+	}
+}
+
+export default $1
 endsnippet
