@@ -4,11 +4,13 @@ let g:ale_linters = {
 \ }
 
 let g:ale_fixers = {
-\   'javascript': ['eslint']
+\   'javascript': ['prettier', 'eslint']
 \ }
 
+" let g:ale_javascript_prettier_options = '--print-width=120'
+
 " Don't highlight the whole line
-let g:ale_set_highlights=0
+let g:ale_set_highlights = 0
 
 " Only lint when saving file
 " let g:ale_lint_on_text_changed = 'never'

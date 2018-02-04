@@ -86,32 +86,12 @@ A sample file could look like this:
 We are using [ALE](https://github.com/w0rp/ale) for linting.
 
 The plugin detects the current filetype and looks for linters to execute.
-Currently all javascript files will automatically be linted with if ESLint is available globally or locally in the working directory, like with: `npm install -D eslint`
+Currently all JavaScript-files will automatically be linted with if ESLint is available globally or locally in the working directory, like with: `npm install -D eslint`
 The Linters default behaviour is to look in a `.eslintrc` in the root of the project and lint all JavaScript-files on save.
 
-Calling `:ALEFix` inside NVIM will automatically fix most of the simple linting issues.
-
 ## Formatting
-[ALE](https://github.com/w0rp/ale) can also be used for formatting, e.g. using ESLint with a prettier-plugin.
-All you need to do is install the dependencies to the project you need formatting on: 
-`npm install -D prettier eslint-plugin-prettier eslint-config-prettier`
-(also install ESLint if you haven't already)
+[ALE](https://github.com/w0rp/ale) can also be used for formatting, e.g. using Prettier and/or ESLint.
+All you need to do is install the dependencies, either globally or locally in the working directory:
+`npm install -D prettier eslint`
 
-After that modify the `.eslintrc` like the following:
-```
-{
-  “extends”: [
-    ...
-    “prettier”
-  ],
-  “plugins”: [
-    “prettier”
-  ],
-  “rules”: {
-    “prettier/prettier”: “error”
-  }
-}
-```
-_Note: Make sure to put prettier-extension last so it can overried the configuration of other extensions._
-
-Again, running `:ALEFix` will allow you to fix occurring errors and warnings.
+After that every save on a JavaScript or JSX file will automatically cause formatting by prettier and remaining linter-warnings and -errors will be fixed by ESLint.
