@@ -14,7 +14,7 @@ let g:ale_set_highlights=0
 " let g:ale_lint_on_text_changed = 'never'
 
 " Directly fix when saving
-" let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 1
 
 " Modify icons and colors
 let g:ale_sign_error = '✖'
