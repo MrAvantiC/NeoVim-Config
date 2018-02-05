@@ -8,6 +8,7 @@ let g:ale_fixers = {
 \ }
 
 " let g:ale_javascript_prettier_options = '--print-width=120'
+let g:ale_javascript_prettier_options = '--no-semi'
 
 " Don't highlight the whole line
 let g:ale_set_highlights = 0
