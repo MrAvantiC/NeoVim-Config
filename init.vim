@@ -156,6 +156,11 @@ nmap k gk
 map J 5j
 map K 5k
 
+" Move to the next empty line
+map , }
+map ; {
+
+
 " Remap move to beginning/end of line
 nnoremap H _
 nnoremap L $
