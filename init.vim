@@ -205,6 +205,9 @@ nnoremap <C-l> <C-W>l
 " tic $TERM.ti
 " see also: https://github.com/neovim/neovim/wiki/FAQ#my-ctrl-h-mapping-doesnt-work
 
+" Rotate open splits
+nnoremap <leader>r <C-W>r
+
 " Close current buffer with ctrl+w
 map<silent> <C-w> :bp\|bd #<CR>
 map<silent> <C-q> :bd<CR>
