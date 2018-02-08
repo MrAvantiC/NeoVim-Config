@@ -244,6 +244,9 @@ nmap db d%
 nnoremap Q @q
 vnoremap Q :normal @q<CR>
 
+" highlight just the text (no indents) in line
+nnoremap vv ^vg_
+
 " Suppress annoying range-errors when leaving visual mode
 vmap <silent> <esc> <esc>
 
