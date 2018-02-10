@@ -240,6 +240,7 @@ map <silent> <Esc> :nohlsearch<CR>
 " Operations until next closing brackets
 nmap cb c%
 nmap db d%
+nmap yb y%
 
 " qq to record macro, Q to replay it
 nnoremap Q @q
@@ -247,6 +248,9 @@ vnoremap Q :normal @q<CR>
 
 " highlight just the text (no indents) in line
 nnoremap vv ^vg_
+
+" opy just the text (no indents) in line
+nnoremap yy ^yg_
 
 " Suppress annoying range-errors when leaving visual mode
 vmap <silent> <esc> <esc>
