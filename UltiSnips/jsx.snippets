@@ -51,6 +51,29 @@ render() {
 }$0
 endsnippet
 
+# Testing
+snippet	desc "test suite" b
+describe('${1}', () => {
+	$0
+})
+endsnippet
+
+snippet	it "unit test" b
+it('${1}', () => {
+	$0
+})
+endsnippet
+
+snippet shallow "shallow render component"
+shallow(<${1:MyComponent} />)
+$0
+endsnippet
+
+snippet tms "toMatchSnapshot"
+expect(${1:${VISUAL}}).toMatchSnapshot()
+$0
+endsnippet
+
 # HTML-Attributes
 snippet "[A-Za-z]*cn" "className" rA
 className="${0}"
