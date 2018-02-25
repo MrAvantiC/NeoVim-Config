@@ -52,6 +52,15 @@ render() {
 endsnippet
 
 # Testing
+snippet	setupTest "setup new test file" b
+import React from 'react'
+import ${1:MyComponent} from './$1'
+
+describe('<$1 />', () => {
+	$0
+})
+endsnippet
+
 snippet	desc "test suite" b
 describe('${1}', () => {
 	$0
@@ -65,13 +74,22 @@ it('${1}', () => {
 endsnippet
 
 snippet shallow "shallow render component"
-shallow(<${1:MyComponent} />)
+const wrapper = shallow(<${1:MyComponent} />)
+$0
+endsnippet
+
+snippet mount "mount the component"
+const wrapper = mount(<${1:MyComponent} />)
 $0
 endsnippet
 
 snippet tms "toMatchSnapshot"
 expect(${1:${VISUAL}}).toMatchSnapshot()
 $0
+endsnippet
+
+snippet debug "debug rendered component" 
+console.log(wrapper.debug())$0
 endsnippet
 
 # HTML-Attributes
@@ -84,6 +102,12 @@ snippet div "div" A
 <div${1}>
 	${2:${VISUAL}}
 </div>
+endsnippet
+
+snippet Fragment "Fragment" 
+<Fragment${1}>
+	${2:${VISUAL}}
+</Fragment>
 endsnippet
 
 snippet span 
@@ -250,7 +274,7 @@ snippet df "display:flex"
 display: flex;$0
 endsnippet
 
-snippet dif "display:inline-flex" A 
+snippet dif "display:inline-flex"
 display: inline-flex;$0
 endsnippet
 
