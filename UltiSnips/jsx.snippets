@@ -1,9 +1,25 @@
 # React specifics
-snippet state "new Component" b
+snippet functional "new Functional Component" b
+import React from 'react'
+import PropTypes from 'prop-types'
+
+const ${1:MyClass} = (${2:props}) => (
+	$0
+)
+
+$1.propTypes = {}
+
+export default $1
+endsnippet
+
+snippet state "new Class Component" b
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class ${1:MyClass} extends Component {
-	${2}render() {
+	static propTypes = {}
+
+	render() {
 		return (
 			$0
 		)
@@ -75,6 +91,11 @@ endsnippet
 
 snippet shallow "shallow render component"
 const wrapper = shallow(<${1:MyComponent} />)
+$0
+endsnippet
+
+snippet instance "instance of wrapper"
+const instance = wrapper.instance()
 $0
 endsnippet
 
@@ -247,7 +268,7 @@ width: ${1:auto};$0
 endsnippet
 
 snippet maxw "max-width" 
-max-width: ${1:auto};$0
+max-width: ${1:none};$0
 endsnippet
 
 snippet minw "min-width" 
