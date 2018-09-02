@@ -40,7 +40,7 @@ Plug 'w0rp/ale', { 'for': ['javascript'] }
 
 " Utility
 Plug 'itchyny/lightline.vim'
-Plug 'taohex/lightline-buffer'
+Plug 'taohexxx/lightline-buffer'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
