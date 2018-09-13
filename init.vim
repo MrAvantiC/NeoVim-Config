@@ -294,6 +294,9 @@ vmap ga <Plug>(EasyAlign)
 
 " ArgWrap
 nnoremap <silent> <leader>d :ArgWrap<CR>
+" overwrite the shortcut for JSON-files with a full format of the whole file
+com! FormatJSON %!python3 -m json.tool
+autocmd FileType json nnoremap <buffer> <leader>d :FormatJSON<CR>
 
 
 " ============================================================================
