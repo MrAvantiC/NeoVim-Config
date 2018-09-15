@@ -4,7 +4,8 @@ let g:ale_linters = {
 \ }
 
 let g:ale_fixers = {
-\   'javascript': ['prettier', 'eslint']
+\   'javascript': ['prettier', 'eslint'],
+\   'json': ['prettier']
 \ }
 
 " let g:ale_javascript_prettier_options = '--print-width=120'
