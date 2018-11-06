@@ -47,6 +47,8 @@ let g:NERDTreeExtensionHighlightColor['scss'] = s:green
 
 " JS
 let g:NERDTreeExtensionHighlightColor['js'] = s:yellow
+let g:NERDTreeExtensionHighlightColor['jsx'] = s:yellow
+let g:NERDTreeExtensionHighlightColor['mjs'] = s:yellow
 
 " PHP
 let g:NERDTreeExtensionHighlightColor['php'] = s:purple
