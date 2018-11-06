@@ -295,13 +295,24 @@ vmap ga <Plug>(EasyAlign)
 " ArgWrap
 nnoremap <silent> <leader>d :ArgWrap<CR>
 " overwrite the shortcut for JSON-files with a full format of the whole file
-com! FormatJSON %!python3 -m json.tool
-autocmd FileType json nnoremap <buffer> <leader>d :FormatJSON<CR>
+autocmd FileType json nnoremap <buffer> <leader>d :call <SID>formatJSON()<CR>
 
+nnoremap <silent> <leader>D :call <SID>setJSONFiletypeAndFormat()<CR>
 
 " ============================================================================
 " FUNCTIONS
 " ============================================================================
+
+fun! <SID>setJSONFiletypeAndFormat()
+  :set ft=json
+  :exec "normal gg"
+  :call <SID>formatJSON()
+endfun
+
+fun! <SID>formatJSON()
+  %!python3 -m json.tool
+endfun
+
 
 " Remove trailing whitespaces for specified filetypes
 fun! <SID>StripTrailingWhitespaces()
