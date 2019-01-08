@@ -50,11 +50,13 @@ Plug 'blueyed/smarty.vim', { 'for': 'smarty' }
 Plug 'wavded/vim-stylus', { 'for': 'stylus' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx'
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'shime/vim-livedown', { 'for': 'markdown' }
 Plug 'nelsyeung/twig.vim', { 'for': 'twig' }
+Plug 'mustache/vim-mustache-handlebars'
 
 call plug#end()
 
