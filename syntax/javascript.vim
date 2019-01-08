@@ -40,6 +40,9 @@ hi jsFuncCall ctermfg=040
 hi jsArrowFunction ctermfg=015
 " Class Definition
 hi jsClassDefinition ctermfg=015
+" Decorators
+hi jsDecorator ctermfg=015
+hi link jsDecoratorFunction jsDecorator
 " Equal signs
 hi jsOperator ctermfg=015
 " normal numbers
