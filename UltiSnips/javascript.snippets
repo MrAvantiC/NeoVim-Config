@@ -61,14 +61,14 @@ forEach((${1:el}${2:, i}) => {
 endsnippet
 
 # functions
-snippet func "function definition (ES6)" 
+snippet funcES6 "function definition (ES6)" 
 const ${1:functionName} = (${2:...params}) => {
 	${3:${VISUAL}}
 };${0}
 endsnippet
 
-snippet funcES5 "function definition (ES5)" 
-var ${1:functionName} = function(${2:...params}) {
+snippet func "function definition (ES5)" 
+function ${1:name}(${2:...params}) {
 	${3:${VISUAL}}
 };${0}
 endsnippet
@@ -90,15 +90,451 @@ snippet pd "preventDefault" i
 preventDefault();
 endsnippet
 
-# testing
-snippet describe "Jest-Test-Suite" 
-describe('${1:description}', () => {
+# React specifics
+snippet functional "new Functional Component" b
+import React from 'react'
+
+function ${1:name}(${2:...params}) {
+	${3:${VISUAL}}
+};${0}
+
+export default $1
+endsnippet
+
+snippet state "new Class Component" b
+import React, { Component } from 'react'
+
+class ${1:MyClass} extends Component {
+	render() {
+		return (
+			$0
+		)
+	}
+}
+
+export default $1
+endsnippet
+
+snippet ptypes "propTypes" b
+static propTypes = {
+	$0
+}
+endsnippet
+
+snippet dprops "defaultProps" b
+static defaultProps = {
+	$0
+}
+endsnippet
+
+# Lifecycle Hooks
+snippet struc "constructor"
+constructor(props) {
+	super(props)
+	${0}
+}
+endsnippet
+
+snippet "[A-Za-z]*cdm" "componentDidMount" rA
+componentDidMount() {
+	${0}
+}
+endsnippet
+
+snippet "[A-Za-z]*cwu" "componentWillUnmount" rA
+componentWillUnmount() {
+	${0}
+}
+endsnippet
+
+snippet "[A-Za-z]*rnd" "render" rA
+render() {
+	${1:${VISUAL}}
+}$0
+endsnippet
+
+# Testing
+snippet	setupTest "setup new test file" b
+import React from 'react'
+import ${1:MyComponent} from './$1'
+
+describe('<$1 />', () => {
 	$0
 })
 endsnippet
 
-snippet test "Jest-Test" 
-test('${1:description}', () => {
+snippet	desc "test suite" b
+describe('${1}', () => {
 	$0
 })
+endsnippet
+
+snippet	it "unit test" b
+it('${1}', () => {
+	$0
+})
+endsnippet
+
+snippet shallow "shallow render component"
+const wrapper = shallow(<${1:MyComponent} />)
+$0
+endsnippet
+
+snippet instance "instance of wrapper"
+const instance = wrapper.instance()
+$0
+endsnippet
+
+snippet mount "mount the component"
+const wrapper = mount(<${1:MyComponent} />)
+$0
+endsnippet
+
+snippet tms "toMatchSnapshot"
+expect(${1:${VISUAL}}).toMatchSnapshot()
+$0
+endsnippet
+
+snippet debug "debug rendered component" 
+console.log(wrapper.debug())$0
+endsnippet
+
+# HTML-Attributes
+snippet "[A-Za-z]*cn" "className" rA
+className="${0}"
+endsnippet
+
+# HTML-Elements for React
+snippet div "div"
+<div${1}>
+	${2:${VISUAL}}
+</div>
+endsnippet
+
+snippet Fragment "Fragment" 
+<Fragment>
+	${1:${VISUAL}}
+</Fragment>
+endsnippet
+
+snippet span 
+<span>${1:${VISUAL}}</span>
+endsnippet
+
+snippet figure 
+<figure>
+	${1}
+</figure>
+endsnippet
+
+snippet img
+<img src="${1}" alt="${2}" />
+endsnippet
+
+snippet h1 
+<h1>${1:${VISUAL}}</h1>
+endsnippet
+
+snippet h2 
+<h2>${1:${VISUAL}}</h2>
+endsnippet
+
+snippet h3 
+<h3>${1:${VISUAL}}</h3>
+endsnippet
+
+snippet a 
+<a href="${1}">${2}</a>
+endsnippet
+
+snippet p 
+<p>
+	${1:${VISUAL}}
+</p>
+endsnippet
+
+snippet ul "unordered list"
+<ul>
+	$0
+</ul>
+endsnippet
+
+snippet ol "ordered list"
+<ol>
+	$0
+</ol>
+endsnippet
+
+snippet li "list item"
+<li>${1}</li>
+endsnippet
+
+snippet select "select"
+<select name="${2}">
+	$0
+</select>
+endsnippet
+
+snippet option "option"
+<option value="${1}">${2}</option>
+endsnippet
+
+snippet strong "bold text"
+<strong>${1:${VISUAL}}</strong>
+endsnippet
+
+snippet header "introductory elements"
+<header>
+	${1:${VISUAL}}
+</header>
+endsnippet
+
+snippet main "main-content of body"
+<main>
+	${1:${VISUAL}}
+</main>
+endsnippet
+
+snippet footer "section-near content"
+<footer>
+	${1:${VISUAL}}
+</footer>
+endsnippet
+
+snippet nav "nagivation links"
+<nav>
+	${1:${VISUAL}}
+</nav>
+endsnippet
+
+snippet section "generic section of document"
+<section>
+	${1:${VISUAL}}
+</section>
+endsnippet
+
+snippet article "self-contained part of document"
+<article>
+	${1:${VISUAL}}
+</article>
+endsnippet
+
+snippet aside "sidebar / related content"
+<aside>
+	${1:${VISUAL}}
+</aside>
+endsnippet
+
+snippet form "form"
+<form>
+	$0
+</form>
+endsnippet
+
+snippet label "label"
+<label${1: for="${2}"}>${3}</label>
+$0
+endsnippet
+
+snippet input "input"
+<input type="${1:text}" ${2:name="${3}"} ${4:value="${5}"} ${6:required="required"} ${7:placeholder="${8}"} />
+endsnippet
+
+snippet button "Button"
+<button type="${1:button}"${2}>$0</button>
+endsnippet
+
+# CSS in JS Helpers:
+snippet med "media" b
+@media (min-width: ${1}px) {
+	$0
+}
+endsnippet
+
+snippet h "height" 
+height: ${1:auto};$0
+endsnippet
+
+snippet w "width" 
+width: ${1:auto};$0
+endsnippet
+
+snippet maxw "max-width" 
+max-width: ${1:none};$0
+endsnippet
+
+snippet minw "min-width" 
+min-width: ${1:auto};$0
+endsnippet
+
+snippet dn "display:none" 
+display: none;$0
+endsnippet
+
+snippet db "display:block" 
+display: block;$0
+endsnippet
+
+snippet din "display:inline" 
+display: inline;$0
+endsnippet
+
+snippet dib "display:inline-block" 
+display: inline-block;$0
+endsnippet
+
+snippet df "display:flex" 
+display: flex;$0
+endsnippet
+
+snippet dif "display:inline-flex"
+display: inline-flex;$0
+endsnippet
+
+snippet fd "flex-direction" 
+flex-direction: ${1:column};$0
+endsnippet
+
+snippet jc "justify-content" 
+justify-content: ${1:center};$0
+endsnippet
+
+snippet ai "align-items" 
+align-items: ${1:center};$0
+endsnippet
+
+snippet fw "flex-wrap" 
+flex-wrap: ${1:wrap};$0
+endsnippet
+
+snippet pa "position:absolute" 
+position: absolute;$0
+endsnippet
+
+snippet pr "position:relative" 
+position: relative;$0
+endsnippet
+
+snippet pf "position:fixed" 
+position: fixed;$0
+endsnippet
+
+snippet m "margin"
+margin: ${1:0};
+endsnippet
+
+snippet mb "margin-bottom" 
+margin-bottom: ${1:0};
+endsnippet
+
+snippet mt "margin-top" 
+margin-top: ${1:0};
+endsnippet
+
+snippet ml "margin-left" 
+margin-left: ${1:0};
+endsnippet
+
+snippet mr "margin-right" 
+margin-right: ${1:0};
+endsnippet
+
+snippet pd "padding"
+padding: ${1:0};
+endsnippet
+
+snippet pdb "padding-bottom" 
+padding-bottom: ${1:0};
+endsnippet
+
+snippet pdt "padding-top" 
+padding-top: ${1:0};
+endsnippet
+
+snippet pdl "padding-left" 
+padding-left: ${1:0};
+endsnippet
+
+snippet pdr "padding-right" 
+padding-right: ${1:0};
+endsnippet
+
+snippet ff "font-family" 
+font-family: '${1}';
+$0
+endsnippet
+
+snippet fs "font-size" 
+font-size: ${1};
+endsnippet
+
+snippet col "color"
+color: ${1:#000};
+endsnippet
+
+snippet lh "line-height" 
+line-height: ${1};
+endsnippet
+
+snippet bgc "background-color" 
+background-color: ${1:#fff};
+endsnippet
+
+snippet bd "border" 
+border: ${1:1px} ${2:solid} ${3:#000};
+$0
+endsnippet
+
+snippet bdt "border-top" 
+border-top: ${1:1px} ${2:solid} ${3:#000};
+$0
+endsnippet
+
+snippet bdb "border-bottom" 
+border-bottom: ${1:1px} ${2:solid} ${3:#000};
+$0
+endsnippet
+
+snippet br "border-radius" 
+border-radius: ${1:3px};
+endsnippet
+
+snippet td "text-dectoration" 
+text-decoration: ${1:none};
+endsnippet
+
+snippet ta "text-align" 
+text-align: ${1:center};
+endsnippet
+
+snippet lst "list-style-type" 
+list-style-type: ${1:none};$0
+endsnippet
+
+snippet va "vertical-align" 
+vertical-align: ${1};$0
+endsnippet
+
+snippet opa "opacity" 
+opacity: ${1:1};
+endsnippet
+
+snippet ov "overflow" 
+overflow: ${1:hidden};
+endsnippet
+
+snippet zi "z-index" 
+z-index: ${1:1};
+endsnippet
+
+snippet ws "white-space" 
+white-space: ${1:nowrap};$0
+endsnippet
+
+snippet con "content"
+content: '${1}';$0
+endsnippet
+
+snippet ! "!important" 
+!important
 endsnippet
