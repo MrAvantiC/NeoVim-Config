@@ -15,6 +15,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'bkad/CamelCaseMotion'
 
 " Editing
 Plug 'scrooloose/nerdcommenter'
@@ -57,6 +58,7 @@ Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'shime/vim-livedown', { 'for': 'markdown' }
 Plug 'nelsyeung/twig.vim', { 'for': 'twig' }
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'nikvdp/ejs-syntax'
 
 call plug#end()
 
@@ -301,6 +303,13 @@ nnoremap <silent> <leader>d :ArgWrap<CR>
 autocmd FileType json nnoremap <buffer> <leader>d :call <SID>formatJSON()<CR>
 
 nnoremap <silent> <leader>D :call <SID>setJSONFiletypeAndFormat()<CR>
+
+nmap <silent> w <Plug>CamelCaseMotion_w
+nmap <silent> b <Plug>CamelCaseMotion_b
+nmap <silent> e <Plug>CamelCaseMotion_e
+vmap <silent> w <Plug>CamelCaseMotion_w
+vmap <silent> b <Plug>CamelCaseMotion_b
+vmap <silent> e <Plug>CamelCaseMotion_e
 
 " ============================================================================
 " FUNCTIONS

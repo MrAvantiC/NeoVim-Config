@@ -1,8 +1,13 @@
 # Add comments like this
 node_modules
+vendor
+var/cache
+coverage
+_build
+dist
 yarn.lock
-main.css
-main.js
+# main.css
+# main.js
 main.*.js
 main.*.js.map
 *.min.css

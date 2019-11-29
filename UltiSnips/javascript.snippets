@@ -68,9 +68,9 @@ const ${1:functionName} = (${2:...params}) => {
 endsnippet
 
 snippet func "function definition (ES5)" 
-function ${1:name}(${2:...params}) {
+function ${1}(${2}) {
 	${3:${VISUAL}}
-};${0}
+}
 endsnippet
 
 # event-listeners
@@ -92,27 +92,21 @@ endsnippet
 
 # React specifics
 snippet functional "new Functional Component" b
-import React from 'react'
-
-function ${1:name}(${2:...params}) {
+export default function ${1:name}(${2:props}) {
 	${3:${VISUAL}}
 };${0}
-
-export default $1
 endsnippet
 
 snippet state "new Class Component" b
-import React, { Component } from 'react'
+import { Component } from 'react'
 
-class ${1:MyClass} extends Component {
+export default class ${1:MyClass} extends Component {
 	render() {
 		return (
 			$0
 		)
 	}
 }
-
-export default $1
 endsnippet
 
 snippet ptypes "propTypes" b
@@ -205,6 +199,10 @@ className="${0}"
 endsnippet
 
 # HTML-Elements for React
+snippet lorem "lorem"
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet$0
+endsnippet
+
 snippet div "div"
 <div${1}>
 	${2:${VISUAL}}

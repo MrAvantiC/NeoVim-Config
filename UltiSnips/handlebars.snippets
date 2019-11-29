@@ -1,0 +1,27 @@
+extends html
+
+snippet if "if statement" 
+{{#if ${1:condition}}}
+	${2:${VISUAL}}
+{{/if}}
+endsnippet
+
+snippet ife "if-else statement" 
+{{#if ${1:condition}}}
+	${2:${VISUAL}}
+{{else}}
+	${3:statement 2}
+{{/if}}
+$0
+endsnippet
+
+snippet each "each-loop" 
+{{#each ${1:model} as |${2:currentItem}|}}
+	${3:${VISUAL}}
+{{/each}}
+endsnippet
+
+snippet debug "debugger" 
+{{debugger}}
+endsnippet
+

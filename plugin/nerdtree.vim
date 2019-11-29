@@ -20,7 +20,9 @@ let g:NERDTreeSyntaxDisableDefaultExtensions = 1
 
 " Folder Colors
 hi NerdTreeDir ctermfg=255
+hi NerdTreeDir ctermfg=255
 hi link NerdTreeOpenable NerdTreeDir 
+hi link NERDTreeFlags NerdTreeDir
 hi NerdTreeCWD ctermfg=030
 hi NerdTreeUp ctermfg=242
 hi NerdTreeFile ctermfg=248

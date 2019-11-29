@@ -139,9 +139,21 @@ snippet nav "nagivation links"
 endsnippet
 
 snippet section "generic section of document"
-<section class="${1}">
+<section${1}>
 	${2:${VISUAL}}
 </section>
+endsnippet
+
+snippet fragment "reveal.js fragment"
+<p class="fragment${1}">
+	${2:${VISUAL}}
+</p>
+endsnippet
+
+snippet notes "reveal.js notes"
+<aside class="notes">
+	${1}
+</aside>
 endsnippet
 
 snippet article "self-contained part of document"
@@ -157,7 +169,11 @@ snippet aside "sidebar / related content"
 endsnippet
 
 snippet label "label"
-<label for="${1}">${2:${VISUAL}}</label>
+<label>${1:${VISUAL}}</label>
+endsnippet
+
+snippet b "bold"
+<b>${1:${VISUAL}}</b>
 endsnippet
 
 snippet input "input"
@@ -188,25 +204,3 @@ snippet td "table-cell"
 </td>
 endsnippet
 
-
-# Handlebars
-snippet if "if statement" 
-{{if ${1:condition}}}
-	${2:${VISUAL}}
-{{/if}}
-endsnippet
-
-snippet ife "if-else statement" 
-{{if ${1:condition}}}
-	${2:${VISUAL}}
-{{else}}
-	${3:statement 2}
-{{/if}}
-$0
-endsnippet
-
-snippet each "foreach-loop" 
-{{#each ${1:model} as |${2:currentItem}|}}
-	${3:${VISUAL}}
-{{/each}}
-endsnippet

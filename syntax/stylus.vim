@@ -14,11 +14,11 @@ hi StorageClass ctermfg=045
 hi link stylusProperty StorageClass
 hi link cssSpecialProp cssAdvancedProp
 " CSS Property-value
-hi Identifier ctermfg=015
-hi link cssVisualVal Identifier
-hi link cssCommonVal Identifier
-hi link cssBorderVal Identifier
-hi link cssTextVal Identifier
+hi stylusVariable ctermfg=015
+hi link cssVisualVal stylusVariable
+hi link cssCommonVal stylusVariable
+hi link cssBorderVal stylusVariable
+hi link cssTextVal stylusVariable
 hi link cssBackgroundVal stylusVariable
 hi link cssListVal stylusVariable
 hi link cssColorVal stylusVariable
