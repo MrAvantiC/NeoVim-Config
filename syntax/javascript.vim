@@ -59,3 +59,11 @@ hi jsDocTags ctermfg=243 cterm=bold
 hi jsDocParam ctermfg=247
 hi link jsDocType jsComment
 hi link jsDocTypeNoParam jsComment
+" JSX
+hi link jsxTagName jsVariableDef
+hi link jsxComponentName jsVariableDef
+hi link jsxBraces jsVariableDef
+hi link jsxOpenPunct jsVariableDef
+hi link jsxClosePunct jsVariableDef
+hi link jsxCloseString jsVariableDef
+hi link jsxString jsString
