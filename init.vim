@@ -50,7 +50,6 @@ Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
 Plug 'blueyed/smarty.vim', { 'for': 'smarty' }
 Plug 'wavded/vim-stylus', { 'for': 'stylus' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
@@ -333,4 +332,4 @@ fun! <SID>StripTrailingWhitespaces()
     %s/\s\+$//e
     call cursor(l, c)
 endfun
-autocmd FileType php,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType php,javascript,stylus autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
