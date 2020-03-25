@@ -94,7 +94,7 @@ endsnippet
 snippet functional "new Functional Component" b
 export default function ${1:name}(${2:props}) {
 	${3:${VISUAL}}
-};${0}
+}${0}
 endsnippet
 
 snippet state "new Class Component" b
@@ -145,6 +145,31 @@ snippet "[A-Za-z]*rnd" "render" rA
 render() {
 	${1:${VISUAL}}
 }$0
+endsnippet
+
+# makaira storefront
+snippet Link "Link component"
+<Link${1}>
+	${2:${VISUAL}}
+</Link>
+endsnippet
+
+snippet ConLink "ConditonalLink component"
+<ConditionalLink${1}>
+	${2:${VISUAL}}
+</ConditionalLink>
+endsnippet
+
+snippet Head "Heading"
+<Heading${1}>
+	${2:${VISUAL}}
+</Heading>
+endsnippet
+
+snippet Copy "Copytext"
+<Copytext${1}>
+	${2:${VISUAL}}
+</Copytext>
 endsnippet
 
 # Testing
@@ -215,6 +240,12 @@ snippet Fragment "Fragment"
 </Fragment>
 endsnippet
 
+snippet Frag "Fragment" 
+<>
+	${1:${VISUAL}}
+</>
+endsnippet
+
 snippet span 
 <span>${1:${VISUAL}}</span>
 endsnippet
@@ -223,6 +254,12 @@ snippet figure
 <figure>
 	${1}
 </figure>
+endsnippet
+
+snippet pic
+<picture>
+	${1}
+</picture>
 endsnippet
 
 snippet img
@@ -359,6 +396,10 @@ endsnippet
 
 snippet maxw "max-width" 
 max-width: ${1:none};$0
+endsnippet
+
+snippet maxh "max-height" 
+max-height: ${1:none};$0
 endsnippet
 
 snippet minw "min-width" 

@@ -3,7 +3,7 @@
 #
 
 snippet med "media" A
-@media $0
+@media (min-width $breakpoint-$0)
 endsnippet
 
 snippet rem "rem-function"
@@ -30,6 +30,14 @@ endsnippet
 
 snippet minw "min-width" A
 min-width ${1:auto}$0
+endsnippet
+
+snippet maxh "max-height" A
+max-height ${1:none}$0
+endsnippet
+
+snippet minh "min-height" A
+min-height ${1:auto}$0
 endsnippet
 
 snippet dn "display:none" A
@@ -78,6 +86,18 @@ endsnippet
 
 snippet f "flex" b
 flex ${1:1}$0
+endsnippet
+
+snippet dg "display:grid" A 
+display grid$0
+endsnippet
+
+snippet gtc "grid-template-columns" A 
+grid-template-columns 1fr$0
+endsnippet
+
+snippet gg "grid-gap" A 
+grid-grap 0$0
 endsnippet
 
 snippet pa "position:absolute" 
