@@ -54,6 +54,14 @@ for (${1:let i = 0}; ${2:i < x.length}; ${3:i++}) {
 }
 endsnippet
 
+snippet try "try-catch" 
+try {
+	${1:${VISUAL}}
+} catch (error) {
+	${2}
+}${0}
+endsnippet
+
 snippet forEach "iterate elements in array" i
 forEach((${1:el}${2:, i}) => {
 	${3}
@@ -171,6 +179,19 @@ snippet Copy "Copytext"
 	${2:${VISUAL}}
 </Copytext>
 endsnippet
+
+snippet T "Text"
+<Text${1}>
+	${2:${VISUAL}}
+</Text>
+endsnippet
+
+snippet But "Button"
+<Button${1}>
+	${2:${VISUAL}}
+</Button>
+endsnippet
+
 
 # Testing
 snippet	setupTest "setup new test file" b
