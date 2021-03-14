@@ -52,7 +52,7 @@ Plug 'wavded/vim-stylus', { 'for': 'stylus' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'maxmellon/vim-jsx-pretty', { 'for': 'javascript' }
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
-Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }
+Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript', 'do': 'make install' }
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'shime/vim-livedown', { 'for': 'markdown' }
