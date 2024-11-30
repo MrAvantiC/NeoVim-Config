@@ -155,6 +155,13 @@ render() {
 }$0
 endsnippet
 
+snippet effect "useEffect"
+useEffect(() => {
+	${1:${VISUAL}}
+}, [])
+$0
+endsnippet
+
 # makaira storefront
 snippet Link "Link component"
 <Link${1}>
@@ -192,14 +199,36 @@ snippet But "Button"
 </Button>
 endsnippet
 
+snippet Text "Text"
+<Text${1}>
+	${2:${VISUAL}}
+</Text>
+endsnippet
+
+
+# Mobx
+snippet store "new Store"
+import { makeAutoObservable } from 'mobx'
+
+class ${1} {
+	$0
+
+	constructor() {
+		makeAutoObservable(this, {}, { autoBind: true })
+	}
+}
+
+export default new $1()
+endsnippet
 
 # Testing
-snippet	setupTest "setup new test file" b
-import React from 'react'
-import ${1:MyComponent} from './$1'
+snippet	test "setup new test file" 
+import ${1} from './$1'
 
-describe('<$1 />', () => {
-	$0
+describe('$1', () => {
+	it('should ${2}', () => {
+		$0
+	})
 })
 endsnippet
 

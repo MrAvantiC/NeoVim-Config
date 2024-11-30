@@ -254,7 +254,7 @@ vnoremap Q :normal @q<CR>
 " highlight just the text (no indents) in line
 nnoremap vv ^vg_
 
-" opy just the text (no indents) in line
+" copy just the text (no indents) in line
 nnoremap yy ^yg_
 
 " Suppress annoying range-errors when leaving visual mode
